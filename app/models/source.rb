@@ -6,9 +6,13 @@ class Source < ActiveRecord::Base
     events = ics_strings.collect { |string| convert_ics(string) }
     events.each { |event| create_event(event) }
   end
+
   def publish
-    events.first.ics
+    cal = RiCal::Component::Calendar.new
+    events.each { |event| cal.events << RiCal.parse_string(event.ics)[0] }
+    cal.to_s
   end
+
   attr_accessible :tld,:path,:css_path
 end
 

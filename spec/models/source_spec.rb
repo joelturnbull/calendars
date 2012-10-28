@@ -18,14 +18,13 @@ describe "Source" do
       Then { source.events.count.should == 25 }
     end
 
-    it "publishes ics" do
-      lambda { RiCal.parse_string(source.publish) }.should_not raise_error
+    context "publishes ics" do
+      Then { lambda { RiCal.parse_string(source.publish) }.should_not raise_error }
     end
 
-    it "publishes collected events" do
-      ics = RiCal.parse_string(source.publsh)
-      
+    context "publishes collected events" do
+      Given(:ics) { RiCal.parse_string(source.publish) }
+      Then { ics[0].events.count.should == 25 }
     end
-    
-  end
+  end 
 end
