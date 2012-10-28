@@ -18,4 +18,7 @@ gem 'jquery-rails'
 group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
+  gem 'rspec-given'
+  gem 'vcr'
+  gem 'webmock'
 end

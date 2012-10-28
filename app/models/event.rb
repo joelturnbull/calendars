@@ -1,6 +1,7 @@
 class Event < ActiveRecord::Base
   belongs_to :source
-  attr_accessible :ics,:source
+  belongs_to :location
+  attr_accessible :ics,:source,:location
   validate :ics_is_parsable
 
   def ics_is_parsable

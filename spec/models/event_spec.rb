@@ -1,6 +1,11 @@
 require 'spec_helper'
 
 describe Event do
+  context "belongs to a location" do
+    Given(:location) { Location.new(name:'MOTR') }
+    Given(:event) { Event.create!(ics:ics,location:location) }
+    Then { event.location.should == location }
+  end
   it "rejects invalid ics" do
     lambda { Event.create!(ics:"bad bad bad") }.should raise_error
   end
