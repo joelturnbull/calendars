@@ -1,0 +1,1843 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSource (20121028040448)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSource (20121028040448)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "sources" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uri" varchar(255), "path" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121028040448')[0m
+  [1m[35m (2.6ms)[0m  commit transaction
+Migrating to CreateEvent (20121028040541)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSource (20121028040448)
+Migrating to CreateEvent (20121028040541)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "source_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121028040541')[0m
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("events")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("sources")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "source_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "sources" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uri" varchar(255), "path" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121028040541')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121028040448')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSource (20121028040448)
+Migrating to CreateEvent (20121028040541)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("events")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("sources")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "source_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "sources" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uri" varchar(255), "path" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121028040541')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121028040448')[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateEvent (20121028040541)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "events"[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20121028040541'
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("sources")
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSource (20121028040448)
+Migrating to CreateEvent (20121028040541)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "source_id" integer, "ics" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121028040541')[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("events")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("sources")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "source_id" integer, "ics" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "sources" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "uri" varchar(255), "path" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (1.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121028040541')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121028040448')
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSource (20121028040448)
+Migrating to CreateEvent (20121028040541)
+Migrating to AddCssPathToSource (20121028181020)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "source" ADD "css_path" varchar(255)
+SQLite3::SQLException: no such table: source: ALTER TABLE "source" ADD "css_path" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSource (20121028040448)
+Migrating to CreateEvent (20121028040541)
+Migrating to AddCssPathToSource (20121028181020)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "source" ADD "css_path" varchar(255)
+SQLite3::SQLException: no such table: source: ALTER TABLE "source" ADD "css_path" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSource (20121028040448)
+Migrating to CreateEvent (20121028040541)
+Migrating to AddCssPathToSource (20121028181020)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "source" ADD "css_path" varchar(255)
+SQLite3::SQLException: no such table: source: ALTER TABLE "source" ADD "css_path" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSource (20121028040448)
+Migrating to CreateEvent (20121028040541)
+Migrating to AddCssPathToSource (20121028181020)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "source" ADD "css_path" varchar(255)
+SQLite3::SQLException: no such table: source: ALTER TABLE "source" ADD "css_path" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSource (20121028040448)
+Migrating to CreateEvent (20121028040541)
+Migrating to AddCssPathToSource (20121028181020)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "source" ADD "css_path" varchar(255)
+SQLite3::SQLException: no such table: source: ALTER TABLE "source" ADD "css_path" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSource (20121028040448)
+Migrating to CreateEvent (20121028040541)
+Migrating to AddCssPathToSource (20121028181020)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "sources" ADD "css_path" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121028181020')[0m
+  [1m[35m (2.6ms)[0m  commit transaction
+Migrating to RenameUritld (20121028181334)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TEMPORARY TABLE "altered_sources" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tld" varchar(255), "path" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "css_path" varchar(255)) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("sources")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "sources"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "sources"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "sources" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tld" varchar(255), "path" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "css_path" varchar(255)) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_sources")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "altered_sources"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "altered_sources"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121028181334')
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("events")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("sources")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "source_id" integer, "ics" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "sources" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tld" varchar(255), "path" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "css_path" varchar(255)) [0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121028181334')
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121028040448')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121028040541')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121028181020')[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSource (20121028040448)
+Migrating to CreateEvent (20121028040541)
+Migrating to AddCssPathToSource (20121028181020)
+Migrating to RenameUritld (20121028181334)
+Migrating to CreateLocation (20121028185659)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "CreateLocation" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121028185659')[0m
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("events")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("locations")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("sources")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "source_id" integer, "ics" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "CreateLocation" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "sources" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tld" varchar(255), "path" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "css_path" varchar(255)) 
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121028185659')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121028040448')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121028040541')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121028181020')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121028181334')[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateLocation (20121028185659)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20121028185659'
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("events")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("sources")[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSource (20121028040448)
+Migrating to CreateEvent (20121028040541)
+Migrating to AddCssPathToSource (20121028181020)
+Migrating to RenameUritld (20121028181334)
+Migrating to CreateLocation (20121028185659)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121028185659')[0m
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("events")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("locations")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("sources")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "source_id" integer, "ics" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "sources" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tld" varchar(255), "path" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "css_path" varchar(255)) 
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121028185659')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121028040448')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121028040541')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121028181020')
+  [1m[36m (1.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121028181334')[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateSource (20121028040448)
+Migrating to CreateEvent (20121028040541)
+Migrating to AddCssPathToSource (20121028181020)
+Migrating to RenameUritld (20121028181334)
+Migrating to CreateLocation (20121028185659)
+Migrating to AddLocationToEvent (20121028190317)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "events" ADD "location_id" integer
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121028190317')[0m
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("events")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("locations")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("sources")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "source_id" integer, "ics" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "location_id" integer) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "sources" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tld" varchar(255), "path" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "css_path" varchar(255)) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121028190317')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121028040448')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121028040541')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121028181020')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121028181334')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121028185659')
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-10-28 20:57:46 -0400
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (47ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-10-28 20:57:53 -0400
+
+ActionController::RoutingError (No route matches [GET] "/locations"):
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:16:in `call'
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/ruby/1.9.1/gems/activesupport-3.2.8/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/engine.rb:479:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/application.rb:223:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/log_tailer.rb:17:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /Users/joelturnbull/Developer/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/joelturnbull/Developer/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/joelturnbull/Developer/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (24.8ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-10-28 20:58:42 -0400
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (No route matches [GET] "/locations"):
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:16:in `call'
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/ruby/1.9.1/gems/activesupport-3.2.8/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/engine.rb:479:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/application.rb:223:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/log_tailer.rb:17:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /Users/joelturnbull/Developer/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/joelturnbull/Developer/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/joelturnbull/Developer/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (25.7ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-10-28 20:59:18 -0400
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (No route matches [GET] "/locations"):
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:16:in `call'
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/ruby/1.9.1/gems/activesupport-3.2.8/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/engine.rb:479:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/application.rb:223:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/log_tailer.rb:17:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /Users/joelturnbull/Developer/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/joelturnbull/Developer/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/joelturnbull/Developer/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.3ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-10-28 20:59:20 -0400
+
+ActionController::RoutingError (No route matches [GET] "/locations"):
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:16:in `call'
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/ruby/1.9.1/gems/activesupport-3.2.8/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/engine.rb:479:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/application.rb:223:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/log_tailer.rb:17:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /Users/joelturnbull/Developer/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/joelturnbull/Developer/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/joelturnbull/Developer/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-10-28 20:59:20 -0400
+
+ActionController::RoutingError (No route matches [GET] "/locations"):
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:16:in `call'
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/ruby/1.9.1/gems/activesupport-3.2.8/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/engine.rb:479:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/application.rb:223:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/ruby/1.9.1/gems/railties-3.2.8/lib/rails/rack/log_tailer.rb:17:in `call'
+  vendor/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /Users/joelturnbull/Developer/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/joelturnbull/Developer/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/joelturnbull/Developer/.rbenv/versions/1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-10-28 21:11:31 -0400
+Connecting to database specified by database.yml
+
+TypeError (wrong argument type Module (expected Class)):
+  app/controllers/locations_controller.rb:1:in `<top (required)>'
+
+
+  Rendered vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+  Rendered vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.7ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-10-28 21:15:01 -0400
+Processing by LocationsController#index as HTML
+  Rendered locations/index.html.erb within layouts/application (50.2ms)
+Completed 500 Internal Server Error in 92ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @locations.each do |location| %>
+    2:   <%= link_to location.name, location.url %>
+    3: <% end %>
+  app/views/locations/index.html.erb:1:in `_app_views_locations_index_html_erb__2012248577118472583_70354737672660'
+
+
+  Rendered vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Thompson House' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (32.9ms)[0m  [1mINSERT INTO "locations" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["name", "Thompson House"], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sources" ("created_at", "css_path", "path", "tld", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["css_path", "ul.buttons ul:not(.buttons-second-row) li a"], ["path", "calendar"], ["tld", "http://cincymusic.com"], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121028T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121028T190000\nDTSTAMP;VALUE=DATE-TIME:20121028T222514Z\nUID:ab1b1fe0dd6bd7559886121fa31ccf31@cincymusic.com\nDESCRIPTION:Stevie Tombstone w/ Young Colt, Michael Moeller\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/stevie-tombstone\nSUMMARY:Stevie Tombstone\nLOCATION:Thompson House\\n24 E 3rd St\\nNewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 1], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Comet' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["name", "The Comet"], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121028T223000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121028T193000\nDTSTAMP;VALUE=DATE-TIME:20121028T222515Z\nUID:eff93e85cd3a6fed2b2b344b18705062@cincymusic.com\nDESCRIPTION:Comet Bluegrass Allstars\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/cometbluegrass5\nSUMMARY:Comet Bluegrass Allstars\nLOCATION:The Comet\\n4579 Hamilton Avenue\\nCincinnati, Cincinnati 45223\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 2], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Thompson House' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121028T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121028T200000\nDTSTAMP;VALUE=DATE-TIME:20121028T222515Z\nUID:797c68b4a2d07d231f54290240ea0afd@cincymusic.com\nDESCRIPTION:Open Mic w/ Open Mic, Open Mic with Doctor Detoxxx,\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/open-mic6\nSUMMARY:Open Mic\nLOCATION:Thompson House\\n24 E 3rd St\\nNewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 1], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Northside Tavern' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["name", "Northside Tavern"], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121029T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121028T220000\nDTSTAMP;VALUE=DATE-TIME:20121028T222516Z\nUID:58179bf0202a5cc1c9931b3e7fca7e61@cincymusic.com\nDESCRIPTION:The Tillers\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/thetillers\nSUMMARY:The Tillers\nLOCATION:Northside Tavern\\n4163 Hamilton Ave\\nCincinnati, Cincinnati 45223\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 3], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Studio 89' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["name", "Studio 89"], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121029T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121029T190000\nDTSTAMP;VALUE=DATE-TIME:20121028T222517Z\nUID:cbb16ffcf616a2787b5992f7527230c9@cincymusic.com\nDESCRIPTION:Studio 89 w/ Studio 89, The Please Please Me,\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/studio-895\nSUMMARY:Studio 89\nLOCATION:Studio 89\\nGriffin Hall\\nNunn Drive\\nNewport, Newport 41099\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 4], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Lounge)' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["name", "The Southgate House Revival (The Lounge)"], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T003000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121029T213000\nDTSTAMP;VALUE=DATE-TIME:20121028T222518Z\nUID:6ebc35d60a708edc5ab6f73f94664a86@cincymusic.com\nDESCRIPTION:Open Mic w/ Open Mic, Billy Catfish, Billy Catfish, with your host\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/open-mic\nSUMMARY:Open Mic\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 5], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'MOTR Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["name", "MOTR Pub"], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121029T220000\nDTSTAMP;VALUE=DATE-TIME:20121028T222519Z\nUID:5407d719fa41ff062bbbd52604684219@cincymusic.com\nDESCRIPTION:The Yugos\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/the-yugos3\nSUMMARY:The Yugos\nLOCATION:MOTR Pub\\n1345 Main Street\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 6], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Northside Tavern' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121029T220000\nDTSTAMP;VALUE=DATE-TIME:20121028T222520Z\nUID:745564cfce97790dcda6751986814865@cincymusic.com\nDESCRIPTION:Northside Jazz Ensemble\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/northside-jazz-ensemble4\nSUMMARY:Northside Jazz Ensemble\nLOCATION:Northside Tavern\\n4163 Hamilton Ave\\nCincinnati, Cincinnati 45223\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 3], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Mad Frog' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["name", "The Mad Frog"], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T200000\nDTSTAMP;VALUE=DATE-TIME:20121028T222520Z\nUID:e9c50acf27a7c3083db83aedeb40fa1f@cincymusic.com\nDESCRIPTION:Fearless Kid\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/fearless-kid4\nSUMMARY:Fearless Kid\nLOCATION:The Mad Frog\\n1 E. McMillan St.\\nCincinnati, Cincinnati 45210\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 7], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Taft Theatre' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["name", "The Taft Theatre"], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T200000\nDTSTAMP;VALUE=DATE-TIME:20121028T222521Z\nUID:35545802bfc3fdb78f25d2e7d8278ddd@cincymusic.com\nDESCRIPTION:Primus 3D Tour w/ Primus 3D Tour, Primus,\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/primus-3d-tour\nSUMMARY:Primus 3D Tour\nLOCATION:The Taft Theatre\\n317 East 5th St.\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 8], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Stanley''s Pub' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["name", "Stanley's Pub"], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T210000\nDTSTAMP;VALUE=DATE-TIME:20121028T222522Z\nUID:f0822161373859d37485d0fef0c09a62@cincymusic.com\nDESCRIPTION:Rumpke Mountain Boys\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/rumpke-mountain-boys5\nSUMMARY:Rumpke Mountain Boys\nLOCATION:Stanley's Pub\\n323 Stanley Ave.\\nCincinnati, Cincinnati 45226\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 9], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Lounge)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T210000\nDTSTAMP;VALUE=DATE-TIME:20121028T222523Z\nUID:96eb95126d830a7b604db901f3ba4e38@cincymusic.com\nDESCRIPTION:DEVOUT WAX\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/devout-wax4\nSUMMARY:DEVOUT WAX\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 5], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Revival Room)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["name", "The Southgate House Revival (The Revival Room)"], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T210000\nDTSTAMP;VALUE=DATE-TIME:20121028T222523Z\nUID:5d724ee34744e13ad3b92beb85c37bff@cincymusic.com\nDESCRIPTION:The Please Please Me w/ Ashley Peacock\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/the-please-please-me\nSUMMARY:The Please Please Me\nLOCATION:The Southgate House Revival (The Revival Room)\\n111 E 6th St.\\nNewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 10], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Thompson House' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T210000\nDTSTAMP;VALUE=DATE-TIME:20121028T222524Z\nUID:7bc0575bb110bacab950321f732cf333@cincymusic.com\nDESCRIPTION:VHS or BETA\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/vhs-or-beta\nSUMMARY:VHS or BETA\nLOCATION:Thompson House\\n24 E 3rd St\\nNewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 1], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Comet' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T220000\nDTSTAMP;VALUE=DATE-TIME:20121028T222524Z\nUID:b9d06666d7172070176d8a49e847304e@cincymusic.com\nDESCRIPTION:Tweens\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/tweens2\nSUMMARY:Tweens\nLOCATION:The Comet\\n4579 Hamilton Avenue\\nCincinnati, Cincinnati 45223\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 2], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'MOTR Pub' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T220000\nDTSTAMP;VALUE=DATE-TIME:20121028T222525Z\nUID:aa4c60d66e1255774c4ccc123c734358@cincymusic.com\nDESCRIPTION:Writer's Night w/ Writer's Night, Andrew (Evans Collective),\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/writer-s-night6\nSUMMARY:Writer's Night\nLOCATION:MOTR Pub\\n1345 Main Street\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 6], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Arnold''s' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["name", "Arnold's"], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T190000\nDTSTAMP;VALUE=DATE-TIME:20121028T222526Z\nUID:388a5d3b31274ba6c666623fc6b97f61@cincymusic.com\nDESCRIPTION:Todd Hepburn\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/todd-hepburn6\nSUMMARY:Todd Hepburn\nLOCATION:Arnold's\\n210 East Eighth Street\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 11], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Mainstay Rock Bar' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["name", "Mainstay Rock Bar"], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T200000\nDTSTAMP;VALUE=DATE-TIME:20121028T222526Z\nUID:e900ef20f34e596cb1b74a126b1f4739@cincymusic.com\nDESCRIPTION:The Independents\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/the-independents\nSUMMARY:The Independents\nLOCATION:Mainstay Rock Bar\\n301 West 5th St.\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 12], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Sitwells' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["name", "Sitwells"], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T200000\nDTSTAMP;VALUE=DATE-TIME:20121028T222527Z\nUID:5cb18c5c3866431685adbc876cc825f3@cincymusic.com\nDESCRIPTION:Halloween Gypsy Jazz Party! w/ Halloween Gypsy Jazz Party!, Faux Frenchmen,\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/halloween-gypsy-jazz-party-\nSUMMARY:Halloween Gypsy Jazz Party!\nLOCATION:Sitwells\\n324 Ludlow Avenue\\nCincinnati, Cincinnati 45220\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 13], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Stanley''s Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T210000\nDTSTAMP;VALUE=DATE-TIME:20121028T222528Z\nUID:0dddb6a2a485be4a7c11de04baa16c71@cincymusic.com\nDESCRIPTION:Better Than Bacon w/ The Manifest Station, Andyman Hopkins\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/better-than-bacon\nSUMMARY:Better Than Bacon\nLOCATION:Stanley's Pub\\n323 Stanley Ave.\\nCincinnati, Cincinnati 45226\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 9], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Mad Frog' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T210000\nDTSTAMP;VALUE=DATE-TIME:20121028T222528Z\nUID:a804eca3107d7e3611500e2f0a3c7649@cincymusic.com\nDESCRIPTION:Dopapod w/ Skeetones\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/dopapod\nSUMMARY:Dopapod\nLOCATION:The Mad Frog\\n1 E. McMillan St.\\nCincinnati, Cincinnati 45210\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 7], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Revival Room)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T003000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T213000\nDTSTAMP;VALUE=DATE-TIME:20121028T222529Z\nUID:8881ae7aec45f555043bd3e6acc03e8c@cincymusic.com\nDESCRIPTION:Joshua Black Wilkins\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/joshua-black-wilkins\nSUMMARY:Joshua Black Wilkins\nLOCATION:The Southgate House Revival (The Revival Room)\\n111 E 6th St.\\nNewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 10], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'MOTR Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T220000\nDTSTAMP;VALUE=DATE-TIME:20121028T222530Z\nUID:b995bb39768c136109bb36c98d7b45b6@cincymusic.com\nDESCRIPTION:He's My Brother She's My Sister\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/he-s-my-brother-she-s-my-sister\nSUMMARY:He's My Brother She's My Sister\nLOCATION:MOTR Pub\\n1345 Main Street\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 6], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Lounge)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T220000\nDTSTAMP;VALUE=DATE-TIME:20121028T222530Z\nUID:9d0573adfd7043a7a8d023c9f7bc8330@cincymusic.com\nDESCRIPTION:John Ford\nURL;VALUE=URI:http://cincymusic.com/shows/2012/10/john-ford\nSUMMARY:John Ford\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 5], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Mad Frog' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121101T200000\nDTSTAMP;VALUE=DATE-TIME:20121028T222531Z\nUID:2e47010c414cbf1c96aa9fe21912a066@cincymusic.com\nDESCRIPTION:Jahman Brahman\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/jahman-brahman\nSUMMARY:Jahman Brahman\nLOCATION:The Mad Frog\\n1 E. McMillan St.\\nCincinnati, Cincinnati 45210\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 7], ["source_id", 1], ["updated_at", Mon, 29 Oct 2012 02:25:32 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Thompson House' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121028T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121028T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222515Z
+UID:797c68b4a2d07d231f54290240ea0afd@cincymusic.com
+DESCRIPTION:Open Mic w/ Open Mic, Open Mic with Doctor Detoxxx,
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/open-mic6
+SUMMARY:Open Mic
+LOCATION:Thompson House\n24 E 3rd St\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Thompson House' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121028T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121028T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222515Z
+UID:797c68b4a2d07d231f54290240ea0afd@cincymusic.com
+DESCRIPTION:Open Mic w/ Open Mic, Open Mic with Doctor Detoxxx,
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/open-mic6
+SUMMARY:Open Mic
+LOCATION:Thompson House\n24 E 3rd St\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Northside Tavern' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121029T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121028T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222516Z
+UID:58179bf0202a5cc1c9931b3e7fca7e61@cincymusic.com
+DESCRIPTION:The Tillers
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/thetillers
+SUMMARY:The Tillers
+LOCATION:Northside Tavern\n4163 Hamilton Ave\nCincinnati, Cincinnati 45223
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Studio 89' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121029T220000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121029T190000
+DTSTAMP;VALUE=DATE-TIME:20121028T222517Z
+UID:cbb16ffcf616a2787b5992f7527230c9@cincymusic.com
+DESCRIPTION:Studio 89 w/ Studio 89, The Please Please Me,
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/studio-895
+SUMMARY:Studio 89
+LOCATION:Studio 89\nGriffin Hall\nNunn Drive\nNewport, Newport 41099
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Lounge)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T003000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121029T213000
+DTSTAMP;VALUE=DATE-TIME:20121028T222518Z
+UID:6ebc35d60a708edc5ab6f73f94664a86@cincymusic.com
+DESCRIPTION:Open Mic w/ Open Mic, Billy Catfish, Billy Catfish, with your host
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/open-mic
+SUMMARY:Open Mic
+LOCATION:The Southgate House Revival (The Lounge)\n111 E 6th St.\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'MOTR Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121029T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222519Z
+UID:5407d719fa41ff062bbbd52604684219@cincymusic.com
+DESCRIPTION:The Yugos
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/the-yugos3
+SUMMARY:The Yugos
+LOCATION:MOTR Pub\n1345 Main Street\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Northside Tavern' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121029T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222520Z
+UID:745564cfce97790dcda6751986814865@cincymusic.com
+DESCRIPTION:Northside Jazz Ensemble
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/northside-jazz-ensemble4
+SUMMARY:Northside Jazz Ensemble
+LOCATION:Northside Tavern\n4163 Hamilton Ave\nCincinnati, Cincinnati 45223
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Mad Frog' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222520Z
+UID:e9c50acf27a7c3083db83aedeb40fa1f@cincymusic.com
+DESCRIPTION:Fearless Kid
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/fearless-kid4
+SUMMARY:Fearless Kid
+LOCATION:The Mad Frog\n1 E. McMillan St.\nCincinnati, Cincinnati 45210
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Taft Theatre' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222521Z
+UID:35545802bfc3fdb78f25d2e7d8278ddd@cincymusic.com
+DESCRIPTION:Primus 3D Tour w/ Primus 3D Tour, Primus,
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/primus-3d-tour
+SUMMARY:Primus 3D Tour
+LOCATION:The Taft Theatre\n317 East 5th St.\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Stanley''s Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222522Z
+UID:f0822161373859d37485d0fef0c09a62@cincymusic.com
+DESCRIPTION:Rumpke Mountain Boys
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/rumpke-mountain-boys5
+SUMMARY:Rumpke Mountain Boys
+LOCATION:Stanley''s Pub\n323 Stanley Ave.\nCincinnati, Cincinnati 45226
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Lounge)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222523Z
+UID:96eb95126d830a7b604db901f3ba4e38@cincymusic.com
+DESCRIPTION:DEVOUT WAX
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/devout-wax4
+SUMMARY:DEVOUT WAX
+LOCATION:The Southgate House Revival (The Lounge)\n111 E 6th St.\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Revival Room)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222523Z
+UID:5d724ee34744e13ad3b92beb85c37bff@cincymusic.com
+DESCRIPTION:The Please Please Me w/ Ashley Peacock
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/the-please-please-me
+SUMMARY:The Please Please Me
+LOCATION:The Southgate House Revival (The Revival Room)\n111 E 6th St.\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Thompson House' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222524Z
+UID:7bc0575bb110bacab950321f732cf333@cincymusic.com
+DESCRIPTION:VHS or BETA
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/vhs-or-beta
+SUMMARY:VHS or BETA
+LOCATION:Thompson House\n24 E 3rd St\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Comet' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222524Z
+UID:b9d06666d7172070176d8a49e847304e@cincymusic.com
+DESCRIPTION:Tweens
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/tweens2
+SUMMARY:Tweens
+LOCATION:The Comet\n4579 Hamilton Avenue\nCincinnati, Cincinnati 45223
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'MOTR Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222525Z
+UID:aa4c60d66e1255774c4ccc123c734358@cincymusic.com
+DESCRIPTION:Writer''s Night w/ Writer''s Night, Andrew (Evans Collective),
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/writer-s-night6
+SUMMARY:Writer''s Night
+LOCATION:MOTR Pub\n1345 Main Street\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Arnold''s' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T220000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T190000
+DTSTAMP;VALUE=DATE-TIME:20121028T222526Z
+UID:388a5d3b31274ba6c666623fc6b97f61@cincymusic.com
+DESCRIPTION:Todd Hepburn
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/todd-hepburn6
+SUMMARY:Todd Hepburn
+LOCATION:Arnold''s\n210 East Eighth Street\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Mainstay Rock Bar' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222526Z
+UID:e900ef20f34e596cb1b74a126b1f4739@cincymusic.com
+DESCRIPTION:The Independents
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/the-independents
+SUMMARY:The Independents
+LOCATION:Mainstay Rock Bar\n301 West 5th St.\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Sitwells' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222527Z
+UID:5cb18c5c3866431685adbc876cc825f3@cincymusic.com
+DESCRIPTION:Halloween Gypsy Jazz Party! w/ Halloween Gypsy Jazz Party!, Faux Frenchmen,
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/halloween-gypsy-jazz-party-
+SUMMARY:Halloween Gypsy Jazz Party!
+LOCATION:Sitwells\n324 Ludlow Avenue\nCincinnati, Cincinnati 45220
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Stanley''s Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222528Z
+UID:0dddb6a2a485be4a7c11de04baa16c71@cincymusic.com
+DESCRIPTION:Better Than Bacon w/ The Manifest Station, Andyman Hopkins
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/better-than-bacon
+SUMMARY:Better Than Bacon
+LOCATION:Stanley''s Pub\n323 Stanley Ave.\nCincinnati, Cincinnati 45226
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Mad Frog' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222528Z
+UID:a804eca3107d7e3611500e2f0a3c7649@cincymusic.com
+DESCRIPTION:Dopapod w/ Skeetones
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/dopapod
+SUMMARY:Dopapod
+LOCATION:The Mad Frog\n1 E. McMillan St.\nCincinnati, Cincinnati 45210
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Revival Room)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T003000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T213000
+DTSTAMP;VALUE=DATE-TIME:20121028T222529Z
+UID:8881ae7aec45f555043bd3e6acc03e8c@cincymusic.com
+DESCRIPTION:Joshua Black Wilkins
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/joshua-black-wilkins
+SUMMARY:Joshua Black Wilkins
+LOCATION:The Southgate House Revival (The Revival Room)\n111 E 6th St.\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'MOTR Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222530Z
+UID:b995bb39768c136109bb36c98d7b45b6@cincymusic.com
+DESCRIPTION:He''s My Brother She''s My Sister
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/he-s-my-brother-she-s-my-sister
+SUMMARY:He''s My Brother She''s My Sister
+LOCATION:MOTR Pub\n1345 Main Street\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Lounge)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222530Z
+UID:9d0573adfd7043a7a8d023c9f7bc8330@cincymusic.com
+DESCRIPTION:John Ford
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/john-ford
+SUMMARY:John Ford
+LOCATION:The Southgate House Revival (The Lounge)\n111 E 6th St.\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Madison Theater' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (23.9ms)[0m  [1mINSERT INTO "locations" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 03:12:27 UTC +00:00], ["name", "Madison Theater"], ["updated_at", Mon, 29 Oct 2012 03:12:27 UTC +00:00]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121101T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T230921Z
+UID:f99f49af99fc53c31942e07c008f9447@cincymusic.com
+DESCRIPTION:Walk The Moon w/ Bad Veins, Family of the Year
+URL;VALUE=URI:http://cincymusic.com/shows/2012/11/walkthemoon
+SUMMARY:Walk The Moon
+LOCATION:Madison Theater\n730 Madison Ave.\nCovington, Covington 41011
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "sources" ("created_at", "css_path", "path", "tld", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 03:12:27 UTC +00:00], ["css_path", "ul.buttons ul:not(.buttons-second-row) li a"], ["path", "calendar"], ["tld", "http://cincymusic.com"], ["updated_at", Mon, 29 Oct 2012 03:12:27 UTC +00:00]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 29 Oct 2012 03:12:27 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121101T200000\nDTSTAMP;VALUE=DATE-TIME:20121028T230921Z\nUID:f99f49af99fc53c31942e07c008f9447@cincymusic.com\nDESCRIPTION:Walk The Moon w/ Bad Veins, Family of the Year\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/walkthemoon\nSUMMARY:Walk The Moon\nLOCATION:Madison Theater\\n730 Madison Ave.\\nCovington, Covington 41011\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 14], ["source_id", 2], ["updated_at", Mon, 29 Oct 2012 03:12:27 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Mad Frog' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121101T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222531Z
+UID:2e47010c414cbf1c96aa9fe21912a066@cincymusic.com
+DESCRIPTION:Jahman Brahman
+URL;VALUE=URI:http://cincymusic.com/shows/2012/11/jahman-brahman
+SUMMARY:Jahman Brahman
+LOCATION:The Mad Frog\n1 E. McMillan St.\nCincinnati, Cincinnati 45210
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35mLocation Load (0.1ms)[0m  SELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Taft Theatre' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T233000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121101T203000
+DTSTAMP;VALUE=DATE-TIME:20121028T230923Z
+UID:4153025a1e3f0ae79977fa24202b067a@cincymusic.com
+DESCRIPTION:Justin Townes Earle w/ Tift Merritt
+URL;VALUE=URI:http://cincymusic.com/shows/2012/11/justin-townes-earle
+SUMMARY:Justin Townes Earle
+LOCATION:The Taft Theatre\n317 East 5th St.\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "ics", "location_id", "source_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Oct 2012 03:12:27 UTC +00:00], ["ics", "BEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T233000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121101T203000\nDTSTAMP;VALUE=DATE-TIME:20121028T230923Z\nUID:4153025a1e3f0ae79977fa24202b067a@cincymusic.com\nDESCRIPTION:Justin Townes Earle w/ Tift Merritt\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/justin-townes-earle\nSUMMARY:Justin Townes Earle\nLOCATION:The Taft Theatre\\n317 East 5th St.\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\n"], ["location_id", 8], ["source_id", 2], ["updated_at", Mon, 29 Oct 2012 03:12:27 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Connecting to database specified by database.yml
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Thompson House' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121028T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121028T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222515Z
+UID:797c68b4a2d07d231f54290240ea0afd@cincymusic.com
+DESCRIPTION:Open Mic w/ Open Mic, Open Mic with Doctor Detoxxx,
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/open-mic6
+SUMMARY:Open Mic
+LOCATION:Thompson House\n24 E 3rd St\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Northside Tavern' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121029T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121028T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222516Z
+UID:58179bf0202a5cc1c9931b3e7fca7e61@cincymusic.com
+DESCRIPTION:The Tillers
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/thetillers
+SUMMARY:The Tillers
+LOCATION:Northside Tavern\n4163 Hamilton Ave\nCincinnati, Cincinnati 45223
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Studio 89' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121029T220000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121029T190000
+DTSTAMP;VALUE=DATE-TIME:20121028T222517Z
+UID:cbb16ffcf616a2787b5992f7527230c9@cincymusic.com
+DESCRIPTION:Studio 89 w/ Studio 89, The Please Please Me,
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/studio-895
+SUMMARY:Studio 89
+LOCATION:Studio 89\nGriffin Hall\nNunn Drive\nNewport, Newport 41099
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Lounge)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T003000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121029T213000
+DTSTAMP;VALUE=DATE-TIME:20121028T222518Z
+UID:6ebc35d60a708edc5ab6f73f94664a86@cincymusic.com
+DESCRIPTION:Open Mic w/ Open Mic, Billy Catfish, Billy Catfish, with your host
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/open-mic
+SUMMARY:Open Mic
+LOCATION:The Southgate House Revival (The Lounge)\n111 E 6th St.\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'MOTR Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121029T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222519Z
+UID:5407d719fa41ff062bbbd52604684219@cincymusic.com
+DESCRIPTION:The Yugos
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/the-yugos3
+SUMMARY:The Yugos
+LOCATION:MOTR Pub\n1345 Main Street\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Northside Tavern' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121029T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222520Z
+UID:745564cfce97790dcda6751986814865@cincymusic.com
+DESCRIPTION:Northside Jazz Ensemble
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/northside-jazz-ensemble4
+SUMMARY:Northside Jazz Ensemble
+LOCATION:Northside Tavern\n4163 Hamilton Ave\nCincinnati, Cincinnati 45223
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Mad Frog' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222520Z
+UID:e9c50acf27a7c3083db83aedeb40fa1f@cincymusic.com
+DESCRIPTION:Fearless Kid
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/fearless-kid4
+SUMMARY:Fearless Kid
+LOCATION:The Mad Frog\n1 E. McMillan St.\nCincinnati, Cincinnati 45210
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Taft Theatre' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222521Z
+UID:35545802bfc3fdb78f25d2e7d8278ddd@cincymusic.com
+DESCRIPTION:Primus 3D Tour w/ Primus 3D Tour, Primus,
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/primus-3d-tour
+SUMMARY:Primus 3D Tour
+LOCATION:The Taft Theatre\n317 East 5th St.\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Stanley''s Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222522Z
+UID:f0822161373859d37485d0fef0c09a62@cincymusic.com
+DESCRIPTION:Rumpke Mountain Boys
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/rumpke-mountain-boys5
+SUMMARY:Rumpke Mountain Boys
+LOCATION:Stanley''s Pub\n323 Stanley Ave.\nCincinnati, Cincinnati 45226
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Lounge)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222523Z
+UID:96eb95126d830a7b604db901f3ba4e38@cincymusic.com
+DESCRIPTION:DEVOUT WAX
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/devout-wax4
+SUMMARY:DEVOUT WAX
+LOCATION:The Southgate House Revival (The Lounge)\n111 E 6th St.\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Revival Room)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222523Z
+UID:5d724ee34744e13ad3b92beb85c37bff@cincymusic.com
+DESCRIPTION:The Please Please Me w/ Ashley Peacock
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/the-please-please-me
+SUMMARY:The Please Please Me
+LOCATION:The Southgate House Revival (The Revival Room)\n111 E 6th St.\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Thompson House' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222524Z
+UID:7bc0575bb110bacab950321f732cf333@cincymusic.com
+DESCRIPTION:VHS or BETA
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/vhs-or-beta
+SUMMARY:VHS or BETA
+LOCATION:Thompson House\n24 E 3rd St\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Comet' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222524Z
+UID:b9d06666d7172070176d8a49e847304e@cincymusic.com
+DESCRIPTION:Tweens
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/tweens2
+SUMMARY:Tweens
+LOCATION:The Comet\n4579 Hamilton Avenue\nCincinnati, Cincinnati 45223
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'MOTR Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222525Z
+UID:aa4c60d66e1255774c4ccc123c734358@cincymusic.com
+DESCRIPTION:Writer''s Night w/ Writer''s Night, Andrew (Evans Collective),
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/writer-s-night6
+SUMMARY:Writer''s Night
+LOCATION:MOTR Pub\n1345 Main Street\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Arnold''s' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T220000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T190000
+DTSTAMP;VALUE=DATE-TIME:20121028T222526Z
+UID:388a5d3b31274ba6c666623fc6b97f61@cincymusic.com
+DESCRIPTION:Todd Hepburn
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/todd-hepburn6
+SUMMARY:Todd Hepburn
+LOCATION:Arnold''s\n210 East Eighth Street\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Mainstay Rock Bar' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222526Z
+UID:e900ef20f34e596cb1b74a126b1f4739@cincymusic.com
+DESCRIPTION:The Independents
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/the-independents
+SUMMARY:The Independents
+LOCATION:Mainstay Rock Bar\n301 West 5th St.\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Sitwells' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222527Z
+UID:5cb18c5c3866431685adbc876cc825f3@cincymusic.com
+DESCRIPTION:Halloween Gypsy Jazz Party! w/ Halloween Gypsy Jazz Party!, Faux Frenchmen,
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/halloween-gypsy-jazz-party-
+SUMMARY:Halloween Gypsy Jazz Party!
+LOCATION:Sitwells\n324 Ludlow Avenue\nCincinnati, Cincinnati 45220
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Stanley''s Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222528Z
+UID:0dddb6a2a485be4a7c11de04baa16c71@cincymusic.com
+DESCRIPTION:Better Than Bacon w/ The Manifest Station, Andyman Hopkins
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/better-than-bacon
+SUMMARY:Better Than Bacon
+LOCATION:Stanley''s Pub\n323 Stanley Ave.\nCincinnati, Cincinnati 45226
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Mad Frog' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222528Z
+UID:a804eca3107d7e3611500e2f0a3c7649@cincymusic.com
+DESCRIPTION:Dopapod w/ Skeetones
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/dopapod
+SUMMARY:Dopapod
+LOCATION:The Mad Frog\n1 E. McMillan St.\nCincinnati, Cincinnati 45210
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Revival Room)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T003000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T213000
+DTSTAMP;VALUE=DATE-TIME:20121028T222529Z
+UID:8881ae7aec45f555043bd3e6acc03e8c@cincymusic.com
+DESCRIPTION:Joshua Black Wilkins
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/joshua-black-wilkins
+SUMMARY:Joshua Black Wilkins
+LOCATION:The Southgate House Revival (The Revival Room)\n111 E 6th St.\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'MOTR Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222530Z
+UID:b995bb39768c136109bb36c98d7b45b6@cincymusic.com
+DESCRIPTION:He''s My Brother She''s My Sister
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/he-s-my-brother-she-s-my-sister
+SUMMARY:He''s My Brother She''s My Sister
+LOCATION:MOTR Pub\n1345 Main Street\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Lounge)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222530Z
+UID:9d0573adfd7043a7a8d023c9f7bc8330@cincymusic.com
+DESCRIPTION:John Ford
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/john-ford
+SUMMARY:John Ford
+LOCATION:The Southgate House Revival (The Lounge)\n111 E 6th St.\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Madison Theater' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121101T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T230921Z
+UID:f99f49af99fc53c31942e07c008f9447@cincymusic.com
+DESCRIPTION:Walk The Moon w/ Bad Veins, Family of the Year
+URL;VALUE=URI:http://cincymusic.com/shows/2012/11/walkthemoon
+SUMMARY:Walk The Moon
+LOCATION:Madison Theater\n730 Madison Ave.\nCovington, Covington 41011
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Mad Frog' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121101T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222531Z
+UID:2e47010c414cbf1c96aa9fe21912a066@cincymusic.com
+DESCRIPTION:Jahman Brahman
+URL;VALUE=URI:http://cincymusic.com/shows/2012/11/jahman-brahman
+SUMMARY:Jahman Brahman
+LOCATION:The Mad Frog\n1 E. McMillan St.\nCincinnati, Cincinnati 45210
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Taft Theatre' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T233000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121101T203000
+DTSTAMP;VALUE=DATE-TIME:20121028T230923Z
+UID:4153025a1e3f0ae79977fa24202b067a@cincymusic.com
+DESCRIPTION:Justin Townes Earle w/ Tift Merritt
+URL;VALUE=URI:http://cincymusic.com/shows/2012/11/justin-townes-earle
+SUMMARY:Justin Townes Earle
+LOCATION:The Taft Theatre\n317 East 5th St.\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+Connecting to database specified by database.yml
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Thompson House' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121028T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121028T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222515Z
+UID:797c68b4a2d07d231f54290240ea0afd@cincymusic.com
+DESCRIPTION:Open Mic w/ Open Mic, Open Mic with Doctor Detoxxx,
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/open-mic6
+SUMMARY:Open Mic
+LOCATION:Thompson House\n24 E 3rd St\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Northside Tavern' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121029T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121028T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222516Z
+UID:58179bf0202a5cc1c9931b3e7fca7e61@cincymusic.com
+DESCRIPTION:The Tillers
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/thetillers
+SUMMARY:The Tillers
+LOCATION:Northside Tavern\n4163 Hamilton Ave\nCincinnati, Cincinnati 45223
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Studio 89' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121029T220000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121029T190000
+DTSTAMP;VALUE=DATE-TIME:20121028T222517Z
+UID:cbb16ffcf616a2787b5992f7527230c9@cincymusic.com
+DESCRIPTION:Studio 89 w/ Studio 89, The Please Please Me,
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/studio-895
+SUMMARY:Studio 89
+LOCATION:Studio 89\nGriffin Hall\nNunn Drive\nNewport, Newport 41099
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Lounge)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T003000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121029T213000
+DTSTAMP;VALUE=DATE-TIME:20121028T222518Z
+UID:6ebc35d60a708edc5ab6f73f94664a86@cincymusic.com
+DESCRIPTION:Open Mic w/ Open Mic, Billy Catfish, Billy Catfish, with your host
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/open-mic
+SUMMARY:Open Mic
+LOCATION:The Southgate House Revival (The Lounge)\n111 E 6th St.\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'MOTR Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121029T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222519Z
+UID:5407d719fa41ff062bbbd52604684219@cincymusic.com
+DESCRIPTION:The Yugos
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/the-yugos3
+SUMMARY:The Yugos
+LOCATION:MOTR Pub\n1345 Main Street\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Northside Tavern' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121029T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222520Z
+UID:745564cfce97790dcda6751986814865@cincymusic.com
+DESCRIPTION:Northside Jazz Ensemble
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/northside-jazz-ensemble4
+SUMMARY:Northside Jazz Ensemble
+LOCATION:Northside Tavern\n4163 Hamilton Ave\nCincinnati, Cincinnati 45223
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Mad Frog' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222520Z
+UID:e9c50acf27a7c3083db83aedeb40fa1f@cincymusic.com
+DESCRIPTION:Fearless Kid
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/fearless-kid4
+SUMMARY:Fearless Kid
+LOCATION:The Mad Frog\n1 E. McMillan St.\nCincinnati, Cincinnati 45210
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Taft Theatre' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121030T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222521Z
+UID:35545802bfc3fdb78f25d2e7d8278ddd@cincymusic.com
+DESCRIPTION:Primus 3D Tour w/ Primus 3D Tour, Primus,
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/primus-3d-tour
+SUMMARY:Primus 3D Tour
+LOCATION:The Taft Theatre\n317 East 5th St.\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Stanley''s Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222522Z
+UID:f0822161373859d37485d0fef0c09a62@cincymusic.com
+DESCRIPTION:Rumpke Mountain Boys
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/rumpke-mountain-boys5
+SUMMARY:Rumpke Mountain Boys
+LOCATION:Stanley''s Pub\n323 Stanley Ave.\nCincinnati, Cincinnati 45226
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Lounge)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222523Z
+UID:96eb95126d830a7b604db901f3ba4e38@cincymusic.com
+DESCRIPTION:DEVOUT WAX
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/devout-wax4
+SUMMARY:DEVOUT WAX
+LOCATION:The Southgate House Revival (The Lounge)\n111 E 6th St.\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Revival Room)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222523Z
+UID:5d724ee34744e13ad3b92beb85c37bff@cincymusic.com
+DESCRIPTION:The Please Please Me w/ Ashley Peacock
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/the-please-please-me
+SUMMARY:The Please Please Me
+LOCATION:The Southgate House Revival (The Revival Room)\n111 E 6th St.\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Thompson House' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222524Z
+UID:7bc0575bb110bacab950321f732cf333@cincymusic.com
+DESCRIPTION:VHS or BETA
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/vhs-or-beta
+SUMMARY:VHS or BETA
+LOCATION:Thompson House\n24 E 3rd St\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Comet' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222524Z
+UID:b9d06666d7172070176d8a49e847304e@cincymusic.com
+DESCRIPTION:Tweens
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/tweens2
+SUMMARY:Tweens
+LOCATION:The Comet\n4579 Hamilton Avenue\nCincinnati, Cincinnati 45223
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'MOTR Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121030T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222525Z
+UID:aa4c60d66e1255774c4ccc123c734358@cincymusic.com
+DESCRIPTION:Writer''s Night w/ Writer''s Night, Andrew (Evans Collective),
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/writer-s-night6
+SUMMARY:Writer''s Night
+LOCATION:MOTR Pub\n1345 Main Street\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Arnold''s' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T220000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T190000
+DTSTAMP;VALUE=DATE-TIME:20121028T222526Z
+UID:388a5d3b31274ba6c666623fc6b97f61@cincymusic.com
+DESCRIPTION:Todd Hepburn
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/todd-hepburn6
+SUMMARY:Todd Hepburn
+LOCATION:Arnold''s\n210 East Eighth Street\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Mainstay Rock Bar' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222526Z
+UID:e900ef20f34e596cb1b74a126b1f4739@cincymusic.com
+DESCRIPTION:The Independents
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/the-independents
+SUMMARY:The Independents
+LOCATION:Mainstay Rock Bar\n301 West 5th St.\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Sitwells' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121031T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222527Z
+UID:5cb18c5c3866431685adbc876cc825f3@cincymusic.com
+DESCRIPTION:Halloween Gypsy Jazz Party! w/ Halloween Gypsy Jazz Party!, Faux Frenchmen,
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/halloween-gypsy-jazz-party-
+SUMMARY:Halloween Gypsy Jazz Party!
+LOCATION:Sitwells\n324 Ludlow Avenue\nCincinnati, Cincinnati 45220
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Stanley''s Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222528Z
+UID:0dddb6a2a485be4a7c11de04baa16c71@cincymusic.com
+DESCRIPTION:Better Than Bacon w/ The Manifest Station, Andyman Hopkins
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/better-than-bacon
+SUMMARY:Better Than Bacon
+LOCATION:Stanley''s Pub\n323 Stanley Ave.\nCincinnati, Cincinnati 45226
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Mad Frog' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T000000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T210000
+DTSTAMP;VALUE=DATE-TIME:20121028T222528Z
+UID:a804eca3107d7e3611500e2f0a3c7649@cincymusic.com
+DESCRIPTION:Dopapod w/ Skeetones
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/dopapod
+SUMMARY:Dopapod
+LOCATION:The Mad Frog\n1 E. McMillan St.\nCincinnati, Cincinnati 45210
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Revival Room)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T003000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T213000
+DTSTAMP;VALUE=DATE-TIME:20121028T222529Z
+UID:8881ae7aec45f555043bd3e6acc03e8c@cincymusic.com
+DESCRIPTION:Joshua Black Wilkins
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/joshua-black-wilkins
+SUMMARY:Joshua Black Wilkins
+LOCATION:The Southgate House Revival (The Revival Room)\n111 E 6th St.\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'MOTR Pub' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222530Z
+UID:b995bb39768c136109bb36c98d7b45b6@cincymusic.com
+DESCRIPTION:He''s My Brother She''s My Sister
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/he-s-my-brother-she-s-my-sister
+SUMMARY:He''s My Brother She''s My Sister
+LOCATION:MOTR Pub\n1345 Main Street\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Southgate House Revival (The Lounge)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T010000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121031T220000
+DTSTAMP;VALUE=DATE-TIME:20121028T222530Z
+UID:9d0573adfd7043a7a8d023c9f7bc8330@cincymusic.com
+DESCRIPTION:John Ford
+URL;VALUE=URI:http://cincymusic.com/shows/2012/10/john-ford
+SUMMARY:John Ford
+LOCATION:The Southgate House Revival (The Lounge)\n111 E 6th St.\nNewport, Newport 41071
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'Madison Theater' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121101T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T230921Z
+UID:f99f49af99fc53c31942e07c008f9447@cincymusic.com
+DESCRIPTION:Walk The Moon w/ Bad Veins, Family of the Year
+URL;VALUE=URI:http://cincymusic.com/shows/2012/11/walkthemoon
+SUMMARY:Walk The Moon
+LOCATION:Madison Theater\n730 Madison Ave.\nCovington, Covington 41011
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Mad Frog' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T230000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121101T200000
+DTSTAMP;VALUE=DATE-TIME:20121028T222531Z
+UID:2e47010c414cbf1c96aa9fe21912a066@cincymusic.com
+DESCRIPTION:Jahman Brahman
+URL;VALUE=URI:http://cincymusic.com/shows/2012/11/jahman-brahman
+SUMMARY:Jahman Brahman
+LOCATION:The Mad Frog\n1 E. McMillan St.\nCincinnati, Cincinnati 45210
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT "locations".* FROM "locations" WHERE "locations"."name" = 'The Taft Theatre' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."ics" = 'BEGIN:VEVENT
+DTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121101T233000
+DTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121101T203000
+DTSTAMP;VALUE=DATE-TIME:20121028T230923Z
+UID:4153025a1e3f0ae79977fa24202b067a@cincymusic.com
+DESCRIPTION:Justin Townes Earle w/ Tift Merritt
+URL;VALUE=URI:http://cincymusic.com/shows/2012/11/justin-townes-earle
+SUMMARY:Justin Townes Earle
+LOCATION:The Taft Theatre\n317 East 5th St.\nCincinnati, Cincinnati 45202
+SEQUENCE:1
+END:VEVENT
+' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE "events"."location_id" = 1
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."location_id" = 2[0m
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events" WHERE "events"."location_id" = 3
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."location_id" = 4[0m
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events" WHERE "events"."location_id" = 5
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."location_id" = 6[0m
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE "events"."location_id" = 7
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."location_id" = 8[0m
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events" WHERE "events"."location_id" = 9
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."location_id" = 10[0m
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events" WHERE "events"."location_id" = 11
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."location_id" = 12[0m
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE "events"."location_id" = 13
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE "events"."location_id" = 14[0m
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-10-28 23:14:41 -0400
+Served asset /rails.png - 200 OK (7ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-10-28 23:14:49 -0400
+Processing by LocationsController#index as HTML
+  Rendered locations/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @locations.each do |location| %>
+    2:   <%= link_to location.name, location.url %>
+    3: <% end %>
+  app/views/locations/index.html.erb:1:in `_app_views_locations_index_html_erb__2012248577118472583_70354737672660'
+
+
+  Rendered vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (49.7ms)
+  Rendered vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (62.9ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-10-28 23:15:32 -0400
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+  Rendered locations/index.html.erb within layouts/application (42.6ms)
+Completed 500 Internal Server Error in 178ms
+
+ActionView::Template::Error (undefined method `url' for #<Location:0x007ff97b382170>):
+    1: <% @locations.each do |location| %>
+    2:   <%= link_to location.name, location.url %>
+    3: <% end %>
+  app/views/locations/index.html.erb:2:in `block in _app_views_locations_index_html_erb__2012248577118472583_70354737672660'
+  app/views/locations/index.html.erb:1:in `each'
+  app/views/locations/index.html.erb:1:in `_app_views_locations_index_html_erb__2012248577118472583_70354737672660'
+
+
+  Rendered vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered vendor/ruby/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.6ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2012-10-28 23:17:45 -0400
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" 
+  Rendered locations/index.html.erb within layouts/application (0.5ms)
+Compiled application.css  (1ms)  (pid 79815)
+Compiled jquery.js  (12ms)  (pid 79815)
+Compiled jquery_ujs.js  (0ms)  (pid 79815)
+Compiled application.js  (80ms)  (pid 79815)
+Completed 200 OK in 134ms (Views: 124.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-28 23:17:45 -0400
+Served asset /application.css - 200 OK (44ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-28 23:17:45 -0400
+Served asset /jquery.js - 200 OK (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-28 23:17:45 -0400
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-28 23:17:45 -0400
+Served asset /application.js - 200 OK (7ms)

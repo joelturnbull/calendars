@@ -20,6 +20,8 @@ describe Location do
       When(:rical) { RiCal.parse_string(location.publish) }
       Then { rical[0].events.count.should == 2 }
     end
+
+
   end
 end
 

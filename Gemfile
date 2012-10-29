@@ -15,10 +15,13 @@ end
 
 gem 'jquery-rails'
 
+group :test do
+  gem 'webmock'
+end
+
 group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
   gem 'rspec-given'
   gem 'vcr'
-  gem 'webmock'
 end

@@ -12,6 +12,12 @@ describe Event do
   it "allows valid ics" do
     lambda { Event.create!(ics: ics) }.should_not raise_error
   end
+  context "rejects duplicates" do
+    Given(:location) { Location.new(name:'MOTR') }
+    Given { Event.create(ics:ics,location:location) }
+    When { Event.create(ics:ics,location: location) }
+    Then { Event.count.should == 1 }
+  end
 end
 
 def ics
