@@ -4,11 +4,10 @@ namespace :fetch do
     path = "calendar"
     css_path = "ul.buttons ul:not(.buttons-second-row) li a"
     source = Source.new( tld: tld, path: path, css_path: css_path ) 
+
+    Location.delete_all
     source.fetch
-    Location.all.each do |location|
-      File.open("public/#{location.name}.ics","w") do |f| 
-        f.write(location.publish)
-      end
-    end
+    Location.write_files
+    Source.write_file
   end
 end

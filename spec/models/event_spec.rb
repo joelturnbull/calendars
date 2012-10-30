@@ -1,22 +1,28 @@
 require 'spec_helper'
 
 describe Event do
-  context "belongs to a location" do
-    Given(:location) { Location.new(name:'MOTR') }
-    Given(:event) { Event.create!(ics:ics,location:location) }
-    Then { event.location.should == location }
+  Given(:datetime) { DateTime.new(2012,10,31,2) }
+  Given(:location) { Location.new(name:'MOTR') }
+
+  context "valid event" do
+    Given!(:event) { Event.create!(ics:ics,location: location) }
+
+    context "belongs to a location" do
+      Then { event.location.should == location }
+    end
+
+    context "has a start_date" do
+      Then { event.datetime_start.should == datetime }
+    end
+
+    context "rejects duplicates" do
+      When { Event.create(ics:ics,location: location) }
+      Then { Event.count.should == 1 }
+    end
   end
-  it "rejects invalid ics" do
-    lambda { Event.create!(ics:"bad bad bad") }.should raise_error
-  end
-  it "allows valid ics" do
-    lambda { Event.create!(ics: ics) }.should_not raise_error
-  end
-  context "rejects duplicates" do
-    Given(:location) { Location.new(name:'MOTR') }
-    Given { Event.create(ics:ics,location:location) }
-    When { Event.create(ics:ics,location: location) }
-    Then { Event.count.should == 1 }
+
+  context "rejects invalid ics" do
+    Then { lambda { Event.create!(ics:"bad bad bad") }.should raise_error }
   end
 end
 

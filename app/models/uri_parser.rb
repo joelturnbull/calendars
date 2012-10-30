@@ -1,26 +1,37 @@
 class UriParser
   require 'open-uri'
 
-  def initialize(tld,path,css_path)
+  def initialize(tld,path)
     @tld = tld
     @path = path
-    @css_path = css_path
   end
 
   def parse
-    extract_elements.collect { |element| "#{@tld}/#{element.attribute('href').value}" }
+    ics_uris = Set.new
+    uris.each do |uri|
+      page = JSON.parse(open(uri).read)
+      page["data"]["events"].inject(ics_uris) do |ics_uris,event| 
+        ics_uris << "#{@tld}/#{@path}/#{event['slug']}.ics"
+      end
+    end
+    ics_uris
   end
-
+    
   private 
 
-  def extract_elements
-    doc = Nokogiri::HTML(open(uri))
-    @css_path.split(' ').inject(doc) do |elements,css|
-      elements.css(css)
+  def uris
+    page_param = ""
+    page = JSON.parse(open(uri("")).read)
+    num_pages = page["data"]["total_pages"]
+
+    (1..num_pages).inject(Array.new) do |uris,page| 
+      page_param = "page=#{page}&"
+      uris << uri(page_param)
     end
   end
 
-  def uri
-    "#{@tld}/#{@path}"
+  def uri(page_param)
+    uri = "http://cincymusic.com/calendar/events.ajax?#{page_param}date_start=#{Date.today}&date_end=#{Date.today + 6.months }"
   end
+
 end

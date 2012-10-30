@@ -11,14 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121028190317) do
+ActiveRecord::Schema.define(:version => 20121030180606) do
 
   create_table "events", :force => true do |t|
     t.integer  "source_id"
     t.string   "ics"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
     t.integer  "location_id"
+    t.datetime "datetime_start"
   end
 
   create_table "locations", :force => true do |t|
@@ -32,7 +33,6 @@ ActiveRecord::Schema.define(:version => 20121028190317) do
     t.string   "path"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "css_path"
   end
 
 end

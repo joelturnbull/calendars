@@ -1,7 +1,7 @@
 class Source < ActiveRecord::Base
   has_many :events
   def fetch
-    ics_uris = UriParser.new(tld,path,css_path).parse
+    ics_uris = UriParser.new(tld,path).parse
     ics_strings = ics_uris.collect { |uri| fetch_ics(uri) }
     events = ics_strings.collect { |string| convert_ics(string) }
     events.each { |event| create_event(event) }
@@ -13,7 +13,7 @@ class Source < ActiveRecord::Base
     cal.to_s
   end
 
-  attr_accessible :tld,:path,:css_path
+  attr_accessible :tld,:path
 end
 
 private
@@ -29,7 +29,5 @@ end
 def create_event(event)
   location_name = event.location.split("\n")[0]
   location = Location.find_or_create_by_name(location_name)
-  Event.create( source:self, location:location, ics:event.to_s )  
+  Event.create!( source:self, location:location, ics:event.to_s )  
 end
-  
-
