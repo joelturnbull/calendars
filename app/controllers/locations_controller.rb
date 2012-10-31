@@ -1,5 +1,13 @@
 class LocationsController < ApplicationController
+
   def index
-    @locations = Location.all
   end
+
+  private
+
+  def feeds
+    @feeds ||= Location.order("name")
+    @feeds.unshift Location
+  end
+  helper_method :feeds
 end

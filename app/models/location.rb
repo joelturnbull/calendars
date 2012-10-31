@@ -4,9 +4,13 @@ class Location < ActiveRecord::Base
 
   def self.write_files
     all.each do |location|
-      File.open("public/#{location.name}.ics","w") do |f| 
-        f.write(location.publish)
-      end
+      write_file(location)
+    end
+  end
+
+  def self.write_file(location)
+    File.open("public/#{location.feed_name}.ics","w") do |f| 
+      f.write(location.publish)
     end
   end
 
@@ -16,7 +20,31 @@ class Location < ActiveRecord::Base
     cal.to_s
   end
 
+  def self.publish
+    cal = RiCal::Component::Calendar.new
+    Location.all.each do |location|
+      location.add_events(cal) 
+    end
+    cal.to_s
+  end
+
+  def add_events(cal)
+    events.each { |event| cal.events << RiCal.parse_string(event.ics)[0] }
+  end
+
+  def feed_name
+    name
+  end
+
+  def self.feed_name
+    "ALL Feeds"
+  end
+
   def url
     "#{name}.ics"
+  end
+
+  def self.url
+    "#{feed_name}.ics"
   end
 end
