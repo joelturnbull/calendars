@@ -7,7 +7,11 @@ class LocationsController < ApplicationController
 
   def feeds
     @feeds ||= Location.order("name")
-    @feeds.unshift Location
   end
-  helper_method :feeds
+
+  def master_feed
+    Location
+  end
+
+  helper_method :feeds,:master_feed
 end

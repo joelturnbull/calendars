@@ -1,5 +1,9 @@
 %h1 Cincinnati Live Music Calendar Feeds 
-%p Live music event feeds from all of your favroite venues around town. Subscribe, or import the files into your iCal or Google Calendar. See you at the show!
+%p Live music event feeds from all of your favroite venues around town. Subscribe, or import into your iCal or Google Calendar. See you at the show!
 %ul
--feeds.each do |feed|
-    %li= link_to feed.feed_name, feed.url
+  %li 
+    = link_to master_feed.feed_name, master_feed.url
+    %span{ :class => "last-updated"}Last Update: #{master_feed.last_update}
+    -feeds.each do |feed|
+      %li
+        = link_to feed.feed_name, feed.url
