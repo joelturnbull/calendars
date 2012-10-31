@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/joelturnbull/ri_cal.git
+  revision: 28525058cd120b603f64fd82665157bb7a84dbc7
+  specs:
+    ri_cal (0.8.8)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -94,7 +100,6 @@ GEM
       json (~> 1.4)
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    ri_cal (0.8.8)
     rspec (2.11.0)
       rspec-core (~> 2.11.0)
       rspec-expectations (~> 2.11.0)
@@ -147,7 +152,7 @@ DEPENDENCIES
   pry
   rails (= 3.2.8)
   rest-client
-  ri_cal
+  ri_cal!
   rspec-given
   rspec-rails
   sass-rails (~> 3.2.3)

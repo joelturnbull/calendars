@@ -1,0 +1,30 @@
+# pack-refs with: peeled 
+31fd75f725271c718ef752e18d1038c9f2fee6b7 refs/heads/cache_timezone_periods
+28525058cd120b603f64fd82665157bb7a84dbc7 refs/heads/master
+30fdc11788a8c8519b19832a57e3cc50937eebd3 refs/heads/origin
+5d9f1cafcc79fca9b0ddf91af0f8a26ab2ad0b28 refs/tags/0_5_0
+d78f4d955b2ba0fb5ed6af469da40fca39df9166 refs/tags/0_5_1
+4a3d30ec4e365f9a2695e23a479d5ef933a986c3 refs/tags/0_5_2
+f58fa4c40121c506fcb6a0ab1e235c2ffb266ba9 refs/tags/0_5_3
+^7036aac690c95ddc7b38ef30f84813f2dad150a0
+b02493be6f1b273a55876fcbb8d210ec761474c4 refs/tags/0_6_0
+3b33116a49cb67aa232faa7f295f9c151d564c27 refs/tags/0_6_1
+393018784a2b3fe9bd8421b3ac269d39f3f29b12 refs/tags/0_6_2
+9b5d3d348e118921448b7b1b8d732cb2c87e65a3 refs/tags/0_6_3
+f7d0c18ad18f34d6ddde0e85336fe5b2bd0e2103 refs/tags/0_7_0
+66babd7852f4f02871165bf4bac28747cc374eab refs/tags/0_7_1
+b04b4715fbbf77922253125ca163b3fdee1a9efe refs/tags/0_7_2
+3fbfbc9bd1cd643b7463cffae7d1177d1a7f5ee2 refs/tags/REL-0.7.4
+641c7dcbd285cfd2921c78fa7280338491d689ae refs/tags/github0_0_11
+ee595684960b1e1331e10d99666f44ca7710b6df refs/tags/github0_0_7
+9724c1763d87b9e3b29e75351433739669d8f641 refs/tags/perf_harness
+fb86ee01d7ce75e5347c19e96c3de4eacdd8bed2 refs/tags/v0.7.5
+880e8ac221879cfb76b130b718d2008ee36d72ad refs/tags/v0.7.6
+128d820037b2a2fc3d5c0fdb545d6e00b916ce0d refs/tags/v0.8.0
+5d8a2fb6b2aae478dd3844a9da39a85d8f657c2f refs/tags/v0.8.1
+46bb5d177dab30a1c633c1fb0aa788c341e41363 refs/tags/v0.8.2
+465b0334e485f4d7bd4dbc59abfe72c6f8ce6599 refs/tags/v0.8.3
+4f600201c6a9a958947f34acee070225621e337c refs/tags/v0.8.4
+8d021f1aab42b86b920dc1e47b70a557ee01c249 refs/tags/v0.8.6
+2dbcdf87759130ffa7a84faad5173790443224d9 refs/tags/v0.8.7
+5c2960e1b4ec69dcb7df6301dabedf421e463c09 refs/tags/v0.8.8

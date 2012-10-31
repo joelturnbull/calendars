@@ -4,7 +4,7 @@ gem 'rails', '3.2.8'
 gem 'pg'
 
 gem 'nokogiri'
-gem 'ri_cal'
+gem 'ri_cal', :git => 'https://github.com/joelturnbull/ri_cal.git'
 gem 'rest-client'
 
 gem 'haml' 
