@@ -11,11 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121030180606) do
+ActiveRecord::Schema.define(:version => 20121031150958) do
 
   create_table "events", :force => true do |t|
     t.integer  "source_id"
-    t.string   "ics"
+    t.text     "ics"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
     t.integer  "location_id"
