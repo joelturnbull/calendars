@@ -6,6 +6,8 @@ gem 'pg'
 gem 'nokogiri'
 gem 'ri_cal', :git => 'https://github.com/joelturnbull/ri_cal.git'
 gem 'rest-client'
+gem 'paperclip'
+gem 'aws-sdk', '~> 1.3.4'
 
 gem 'haml' 
 

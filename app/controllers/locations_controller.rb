@@ -5,7 +5,7 @@ class LocationsController < ApplicationController
 
   private
 
-  def feeds
+  def locations
     @feeds ||= Location.order("name")
   end
 
@@ -13,5 +13,5 @@ class LocationsController < ApplicationController
     Location
   end
 
-  helper_method :feeds,:master_feed
+  helper_method :locations,:master_feed
 end

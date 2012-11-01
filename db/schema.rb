@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121031150958) do
+ActiveRecord::Schema.define(:version => 20121101183122) do
 
   create_table "events", :force => true do |t|
     t.integer  "source_id"
@@ -24,8 +24,12 @@ ActiveRecord::Schema.define(:version => 20121031150958) do
 
   create_table "locations", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+    t.string   "feed_file_name"
+    t.string   "feed_content_type"
+    t.integer  "feed_file_size"
+    t.datetime "feed_updated_at"
   end
 
   create_table "sources", :force => true do |t|
