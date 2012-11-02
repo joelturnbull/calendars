@@ -1,7 +1,7 @@
 class Location < ActiveRecord::Base
   has_many :events, dependent: :destroy 
   has_attached_file :feed, s3_credentials: { access_key_id: ENV['AWS_ACCESS_KEY_ID'], secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'], bucket: 'music-feeds' }, storage: :s3
-  attr_accessible :name
+  attr_accessible :name, :feed
 
   def self.write_files
     all.each do |location|
@@ -19,10 +19,10 @@ class Location < ActiveRecord::Base
     filepath = "./tmp/#{publisher.feed_name}.ics"
     File.open(filepath,"w") do |f| 
       f.write(publisher.publish)
-      self.feed = f
-      save!
     end
-    File.unlink(filepath)
+    self.feed = File.open(filepath)
+    self.save!
+    File.unlink
   end
 
   def publish
