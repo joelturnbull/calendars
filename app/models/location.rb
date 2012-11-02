@@ -52,10 +52,6 @@ class Location < ActiveRecord::Base
   end
 
   def last_update
-    events.first.created_at.strftime('%Y/%m/%d')
-  end
-
-  def self.last_update
     Location.first.events.first.created_at.strftime('%Y/%m/%d')
   end
 end
