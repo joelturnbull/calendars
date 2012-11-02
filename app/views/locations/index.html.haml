@@ -2,8 +2,9 @@
 %p Live music event feeds from all of your favorite venues around town. Subscribe, or import into your iCal or Google Calendar. See you at the show!
 %ul
   %li 
-    = link_to master_feed.feed_name, master_feed.url
-    %span{ :class => "last-updated"}Last Update: #{master_feed.last_update}
+    -if master_location
+      = link_to master_location.feed_name, master_location.feed.url
+      %span{ :class => "last-updated"}Last Update: #{master_location.last_update}
     -locations.each do |location|
       %li
         = link_to location.feed_name, location.feed.url
