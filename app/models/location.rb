@@ -5,16 +5,24 @@ class Location < ActiveRecord::Base
 
   def self.write_files
     all.each do |location|
-      write_file(location)
+      location.write_file
     end
+    Location.write_file
   end
 
-  def self.write_file(location)
-    File.open("public/#{location.feed_name}.ics","w") do |f| 
-      f.write(location.publish)
-      location.feed = f
-      location.save
+  def self.write_file
+    master_location = Location.find_or_create_by_name("ALL")
+    master_location.write_file(Location)
+  end
+
+  def write_file(publisher = self)
+    filepath = "./tmp/#{publisher.feed_name}.ics"
+    File.open(filepath,"w") do |f| 
+      f.write(publisher.publish)
+      self.feed = f
+      save!
     end
+    File.unlink(filepath)
   end
 
   def publish
@@ -40,15 +48,7 @@ class Location < ActiveRecord::Base
   end
 
   def self.feed_name
-    "ALL Feeds"
-  end
-
-  def url
-    "#{name}.ics"
-  end
-
-  def self.url
-    "#{feed_name}.ics"
+    "ALL"
   end
 
   def last_update
