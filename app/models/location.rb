@@ -1,6 +1,6 @@
 class Location < ActiveRecord::Base
   has_many :events, dependent: :destroy 
-  has_attached_file :feed, s3_credentials: { access_key_id: ENV['AWS_ACCESS_KEY_ID'], secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'], bucket: 'music-feeds' }, storage: :s3, s3_headers: { 'Content-Disposition' => 'attachment' }
+  has_attached_file :feed, s3_credentials: { access_key_id: ENV['AWS_ACCESS_KEY_ID'], secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'], bucket: 'music-feeds' }, storage: :s3, s3_headers: { 'Content-Type'=> "text/calendar", 'Content-Disposition' => 'attachment' }
   attr_accessible :name, :feed
 
   def self.write_files
