@@ -1,14 +1,25 @@
-%h1 Cincinnati Live Music Calendar Feeds 
-%p Live music event feeds from all of your favorite venues around town. Subscribe, or import into your iCal or Google Calendar. See you at the show!
-%ul
-  %li 
-    -if master_location
-      = master_location.feed_name
-      = link_to "Google", master_location.google_url
-      = link_to "iCal", master_location.ical_url
-      %span{ :class => "last-updated"}Last Update: #{master_location.last_update}
-    -locations.each do |location|
-      %li
-        = location.feed_name
-        = link_to "Google", location.google_url
-        = link_to "iCal", location.ical_url
+.row
+  .six.columns.centered
+    %h2{:style=>"line-height:1.1em; margin: 15px 0 17px 0" } Cincinnati Live Music Calendar Feeds
+    %p Subscribe to live music event feeds from all of your favorite venues around town! 
+    %p{:class => "last-updated"}Last Updated: #{master_location.last_update}
+    %hr
+    %ul
+      %li 
+        -if master_location
+          .row
+            .four.columns
+              = master_location.feed_name
+            .four.columns
+              = link_to "Google", master_location.google_url
+            .four.columns
+              = link_to "iCal", master_location.ical_url
+        -locations.each do |location|
+          %li
+            .row
+              .four.columns
+                = location.feed_name
+              .four.columns
+                = link_to "Google", location.google_url
+              .four.columns
+                = link_to "iCal", location.ical_url

@@ -12,6 +12,7 @@ gem 'aws-sdk', '~> 1.3.4'
 gem 'haml' 
 
 group :assets do
+  gem 'zurb-foundation', '~> 2.2'
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'

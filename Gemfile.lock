@@ -155,6 +155,9 @@ GEM
     webmock (1.8.11)
       addressable (>= 2.2.7)
       crack (>= 0.1.7)
+    zurb-foundation (2.2.1.2)
+      jquery-rails (>= 1.0)
+      railties (>= 3.1.0, < 4.0)
 
 PLATFORMS
   ruby
@@ -178,3 +181,4 @@ DEPENDENCIES
   uglifier (>= 1.0.3)
   vcr
   webmock
+  zurb-foundation (~> 2.2)
