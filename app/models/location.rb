@@ -27,7 +27,7 @@ class Location < ActiveRecord::Base
 
   def publish
     cal = RiCal::Component::Calendar.new
-    events.each { |event| cal.events << RiCal.parse_string(event.ics)[0] }
+    add_events(cal)
     cal.to_s
   end
 
@@ -40,7 +40,7 @@ class Location < ActiveRecord::Base
   end
 
   def add_events(cal)
-    events.each { |event| cal.events << RiCal.parse_string(event.ics)[0] }
+    events.each { |event| cal.events << event.cal }
   end
 
   def feed_name

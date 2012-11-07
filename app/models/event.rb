@@ -8,7 +8,7 @@ class Event < ActiveRecord::Base
 
   def ics_is_parsable
     begin
-      @cal = RiCal.parse_string(ics)
+      parse_cal
     rescue
       errors.add(:ics,"invalid")
     end
@@ -20,8 +20,24 @@ class Event < ActiveRecord::Base
     end
   end
 
+  def cal
+    @cal ||= adjusted_cal
+  end
+
+  def adjusted_cal
+    rical = parse_cal
+    rical.tap{ |cal| cal.description = "#{cal.description}\n#{cal.url}" }
+  end
+
+  def parse_cal
+    RiCal.parse_string(ics).first
+  end
+
   def set_datetime_start
-    @cal ||= generate_cal 
-    self.datetime_start = @cal[0].dtstart
+    self.datetime_start = cal.dtstart
+  end
+
+  def publish
+    cal.to_s
   end
 end

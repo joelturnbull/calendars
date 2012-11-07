@@ -15,9 +15,9 @@ describe Event do
       Then { event.datetime_start.should == datetime }
     end
 
-#    context "has a link to source" do
-#      Then { event.link.should == "http://cincymusic.com" }
-#    end
+    context "add source uri to description" do
+      Then { RiCal.parse_string(event.publish).first.description.should == "Tweens\nhttp://cincymusic.com/shows/2012/10/tweens2" }
+    end
 
     context "rejects duplicates" do
       When { Event.create(ics:ics,location: location) }
