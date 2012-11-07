@@ -3,8 +3,12 @@
 %ul
   %li 
     -if master_location
-      = link_to master_location.feed_name, master_location.feed.url
+      = master_location.feed_name
+      = link_to "Google", master_location.google_url
+      = link_to "iCal", master_location.ical_url
       %span{ :class => "last-updated"}Last Update: #{master_location.last_update}
     -locations.each do |location|
       %li
-        = link_to location.feed_name, location.feed.url
+        = location.feed_name
+        = link_to "Google", location.google_url
+        = link_to "iCal", location.ical_url

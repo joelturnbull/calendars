@@ -51,6 +51,14 @@ class Location < ActiveRecord::Base
     "ALL"
   end
 
+  def ical_url
+    "webcal://#{CGI.escape(feed.url.gsub("http://",""))}"
+  end
+
+  def google_url
+    "http://www.google.com/calendar/render?cid=#{CGI.escape(feed.url)}"
+  end
+
   def last_update
     Location.first.events.first.created_at.strftime('%Y/%m/%d')
   end
