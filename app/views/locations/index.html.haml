@@ -1,8 +1,10 @@
 .row
   .six.columns.centered
-    %h2{:style=>"line-height:1.1em; margin: 15px 0 17px 0" } Cincinnati Live Music Calendar Feeds
+    %img{:src=>"assets/clmc.png",:style=>"margin: 20px 0 15px -5px",:alt=>"Cincinnati Live Music Calendars"}
     %p Subscribe to live music event feeds from all of your favorite venues around town! 
-    %p{:class => "last-updated"}Last Updated: #{master_location.last_update}
+    %p{:class => "last-updated"}
+      Last Update -  
+      %b #{master_location.last_update.strftime('%A, %b %d %Y')}
     %hr
     %ul
       %li 
