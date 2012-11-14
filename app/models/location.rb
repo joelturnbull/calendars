@@ -3,6 +3,17 @@ class Location < ActiveRecord::Base
   has_attached_file :feed, s3_credentials: { access_key_id: ENV['AWS_ACCESS_KEY_ID'], secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'], bucket: 'music-feeds' }, storage: :s3, s3_headers: { 'Content-Type'=> "text/calendar", 'Content-Disposition' => 'attachment' }
   attr_accessible :name, :feed
 
+
+  def self.last_update
+    if location = order("created_at DESC").detect { |location| !location.events.empty? }
+      location.events.first.created_at
+    end
+  end
+
+  def self.master_feed
+    find_by_name(MASTER_FEED_NAME)
+  end
+
   def self.write_files
     all.each do |location|
       location.write_file
@@ -11,7 +22,7 @@ class Location < ActiveRecord::Base
   end
 
   def self.write_file
-    master_location = Location.find_or_create_by_name("ALL")
+    master_location = Location.find_or_create_by_name(MASTER_FEED_NAME)
     master_location.write_file(Location)
   end
 
@@ -57,9 +68,5 @@ class Location < ActiveRecord::Base
 
   def google_url
     "http://www.google.com/calendar/render?cid=#{CGI.escape(feed.url)}"
-  end
-
-  def last_update
-    Location.first.events.first.created_at
   end
 end

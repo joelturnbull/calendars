@@ -10,7 +10,7 @@ class LocationsController < ApplicationController
   end
 
   def master_location
-    @master_location ||= Location.find_by_name("ALL")
+    @master_location ||= Location.master_feed
   end
 
   helper_method :locations,:master_location

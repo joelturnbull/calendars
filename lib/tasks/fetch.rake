@@ -4,7 +4,7 @@ namespace :fetch do
     path = "shows"
     source = Source.new( tld: tld, path: path ) 
 
-    Location.delete_all
+    Event.delete_all
     source.fetch
     Location.write_files
   end

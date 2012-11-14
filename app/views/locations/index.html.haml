@@ -1,27 +1,33 @@
 .row
   .six.columns.centered
+
     %img{:src=>"assets/clmc.png",:style=>"margin: 20px 0 15px -5px",:alt=>"Cincinnati Live Music Calendars"}
+
     %p Subscribe to live music event feeds from all of your favorite venues around town! 
-    %p{:class => "last-updated"}
-      Last Update -  
-      %b #{master_location.last_update.strftime('%A, %b %d %Y')}
-    %hr
+
+    - if last_update = Location.last_update 
+      %p{:class => "last-updated"}
+        Last Update -  
+        %b #{last_update.strftime('%A, %b %d %Y')}
+      %hr
+
     %ul
-      %li 
-        -if master_location
+      -if master_location
+        %li 
           .row
             .four.columns
-              = master_location.feed_name
+              = Location.feed_name
             .four.columns
               = link_to "Google", master_location.google_url
             .four.columns
               = link_to "iCal", master_location.ical_url
-        -locations.each do |location|
-          %li
-            .row
-              .four.columns
-                = location.feed_name
-              .four.columns
-                = link_to "Google", location.google_url
-              .four.columns
-                = link_to "iCal", location.ical_url
+          
+      -locations.each do |location|
+        %li
+          .row
+            .four.columns
+              = location.feed_name
+            .four.columns
+              = link_to "Google", location.google_url
+            .four.columns
+              = link_to "iCal", location.ical_url

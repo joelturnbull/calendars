@@ -29,5 +29,5 @@ end
 def create_event(event)
   location_name = event.location.split("\n")[0]
   location = Location.find_or_create_by_name(location_name)
-  Event.create!( source:self, location:location, ics:event.to_s )  
+  Event.create( source:self, location:location, ics:event.to_s )  
 end

@@ -15,6 +15,11 @@ describe Location do
       Then { location.events.should include(event2) }
     end
 
+    context "dependent destory" do
+      When { location.destroy }
+      Then { Event.count.should == 0 }
+    end
+
     context "publishes collected events" do
       When(:rical) { RiCal.parse_string(location.publish) }
       Then { rical[0].events.count.should == 2 }
@@ -43,7 +48,7 @@ describe Location do
       Given { flexmock(Location).should_receive(:publish).once }
       Given { flexmock(Location).new_instances.should_receive(:save!).and_return("") }
       When { Location.write_file }
-      Then { Location.find_by_name("ALL").should_not be_nil }
+      Then { Location.find_by_name(MASTER_FEED_NAME).should_not be_nil }
     end
   end
 end

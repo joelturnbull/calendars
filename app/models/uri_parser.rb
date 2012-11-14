@@ -31,7 +31,7 @@ class UriParser
   end
 
   def uri(page_param)
-    uri = "http://cincymusic.com/calendar/events.ajax?#{page_param}date_start=#{Date.today}&date_end=#{Date.today + 6.months }"
+    uri = "http://cincymusic.com/calendar/events.ajax?#{page_param}date_start=#{Date.today}&date_end=#{Date.today + MONTHS_OF_DATA.months }"
   end
 
 end
