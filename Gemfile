@@ -22,6 +22,7 @@ gem 'jquery-rails'
 
 group :test do
   gem 'webmock'
+  gem "factory_girl_rails", "~> 4.0"
 end
 
 group :development, :test do
