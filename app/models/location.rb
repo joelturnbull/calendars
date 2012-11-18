@@ -12,9 +12,9 @@ module AttachmentSettings
 
       if Rails.env.production?
         options[:storage]         ||= :s3
-        options[:s3_credentials][:access_key_id] = ENV['AWS_ACCESS_KEY_ID']
-        options[:s3_credentials][:secret_access_key] = ENV['AWS_SECRET_ACCESS_KEY'], 
-        options[:s3_credentials][:bucket] = 'music-feeds'
+        options[:s3_credentials] = { access_key_id: ENV['AWS_ACCESS_KEY_ID'] }
+        options[:s3_credentials] = { secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'] }
+        options[:s3_credentials] = { bucket: 'music-feeds' }
         options[:s3_headers] = { 'Content-Type'=> "text/calendar", 'Content-Disposition' => 'attachment' }
         options[:s3_permissions]  ||= 'private'
         options[:s3_protocol]     ||= 'https'
