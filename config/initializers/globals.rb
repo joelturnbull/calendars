@@ -1,4 +1,4 @@
-MASTER_FEED_NAME = "Subscribe to All Feeds"
+MASTER_FEED_NAME = "All"
 
 case Rails.env
   when "test"
