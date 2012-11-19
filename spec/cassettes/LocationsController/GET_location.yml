@@ -1,0 +1,567 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://s3.amazonaws.com/music-feeds/location_feeds/All.ics?1353291211
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - uggN+ZM/uwxakgqg27buqmAuEj7nL3u7lHUeCXLhKaTuf1Zb2aXK+ClR55Er6usG
+      X-Amz-Request-Id:
+      - AACA2FB013B9671E
+      Date:
+      - Mon, 19 Nov 2012 05:13:02 GMT
+      Content-Disposition:
+      - attachment
+      Last-Modified:
+      - Mon, 19 Nov 2012 05:11:04 GMT
+      Etag:
+      - ! '"9a6c01ed4b945c6c185c8dbfad0b62fd"'
+      Accept-Ranges:
+      - bytes
+      Content-Type:
+      - text/calendar
+      Content-Length:
+      - '93736'
+      Server:
+      - AmazonS3
+    body:
+      encoding: ASCII-8BIT
+      string: ! "BEGIN:VCALENDAR\nPRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML
+        ri_cal gem//EN\nCALSCALE:GREGORIAN\nVERSION:2.0\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121214T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121214T190000\nDTSTAMP;VALUE=DATE-TIME:20121119T001005Z\nUID:d0c65d4744fc977c76f39fdcad465aa6@cincymusic.com\nDESCRIPTION:Bill
+        Gaither\\nhttp://cincymusic.com/shows/2012/12/bill-gaithe\n r\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/bill-gaither\nSUMMARY:Bill
+        Gaither\nLOCATION:Bank of Kentucky Center\\n500 Nunn Drive\\nNewport, Newport
+        41099\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130411T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130411T190000\nDTSTAMP;VALUE=DATE-TIME:20121119T001045Z\nUID:c38edee0f860cd8121dcabf6353f8237@cincymusic.com\nDESCRIPTION:Chris
+        Tomlin w/ Kari Jobe\\nhttp://cincymusic.com/shows/2013/0\n 4/chris-tomlin\nURL;VALUE=URI:http://cincymusic.com/shows/2013/04/chris-tomlin\nSUMMARY:Chris
+        Tomlin\nLOCATION:Bank of Kentucky Center\\n500 Nunn Drive\\nNewport, Newport
+        41099\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121222T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121221T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T001014Z\nUID:56923f3b717fc365155779809e3d2623@cincymusic.com\nDESCRIPTION:Chuck
+        Brisbin and the Tuna Project\\nhttp://cincymusic.com/sho\n ws/2012/12/chuck-brisbin-and-the-tuna-project\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/chuck-brisbin-and-the-t\n
+        una-project\nSUMMARY:Chuck Brisbin and the Tuna Project\nLOCATION:Mansion
+        Hill Tavern\\n502 Washington Ave\\nNewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121229T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121228T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001022Z\nUID:fa32764c35eecf8a3dab18eefa586f8a@cincymusic.com\nDESCRIPTION:Strange
+        Creature\\nhttp://cincymusic.com/shows/2012/12/strange\n -creature\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/strange-creature\nSUMMARY:Strange
+        Creature\nLOCATION:Sitwells\\n324 Ludlow Avenue\\nCincinnati, Cincinnati 45220\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130105T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130104T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T001030Z\nUID:a519e40fd2a09b1abaf8deb503a78a6d@cincymusic.com\nDESCRIPTION:Kelly
+        Thomas w/ Sassy Molasses\\nhttp://cincymusic.com/shows/2\n 013/01/kelly-thomas\nURL;VALUE=URI:http://cincymusic.com/shows/2013/01/kelly-thomas\nSUMMARY:Kelly
+        Thomas\nLOCATION:Northside Tavern\\n4163 Hamilton Ave\\nCincinnati, Cincinnati
+        4522\n 3\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130120T003000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130119T213000\nDTSTAMP;VALUE=DATE-TIME:20121119T001037Z\nUID:e5bc54a24d7a25c40867b5217ffeb61d@cincymusic.com\nDESCRIPTION:Big
+        Rock Club at Northside Tavern w/ Big Rock Club at Northsi\n de Tavern\\, Big
+        Rock Club\\,\\nhttp://cincymusic.com/shows/2013/01/big-roc\n k-club-at-northside-tavern\nURL;VALUE=URI:http://cincymusic.com/shows/2013/01/big-rock-club-at-norths\n
+        ide-tavern\nSUMMARY:Big Rock Club at Northside Tavern\nLOCATION:Northside
+        Tavern\\n4163 Hamilton Ave\\nCincinnati, Cincinnati 4522\n 3\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130322T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130322T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001044Z\nUID:375b28644238d3f1961972112843dc51@cincymusic.com\nDESCRIPTION:Looney
+        w/ HAYSTAK\\, SPITFIRE\\nhttp://cincymusic.com/shows/201\n 3/03/looney\nURL;VALUE=URI:http://cincymusic.com/shows/2013/03/looney\nSUMMARY:Looney\nLOCATION:Inner
+        Circle\\n4343 Kellogg Ave\\nCincinnati, Cincinnati 45226\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121119T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121119T190000\nDTSTAMP;VALUE=DATE-TIME:20121119T000907Z\nUID:678be17bdc8d665d380c8d16572bf522@cincymusic.com\nDESCRIPTION:Studio
+        89 w/ Studio 89\\, Ellery\\, Harper Blynn\\nhttp://cincym\n usic.com/shows/2012/11/studio-892\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/studio-892\nSUMMARY:Studio
+        89\nLOCATION:Studio 89\\nGriffin Hall\\nNunn Drive\\nNewport, Newport 41099\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121203T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121203T190000\nDTSTAMP;VALUE=DATE-TIME:20121119T000946Z\nUID:3c2453c0a0f948db845a919167569863@cincymusic.com\nDESCRIPTION:Studio
+        89 w/ Studio 89\\, The Mastersons\\,\\nhttp://cincymusic.\n com/shows/2012/12/studio-89\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/studio-89\nSUMMARY:Studio
+        89\nLOCATION:Studio 89\\nGriffin Hall\\nNunn Drive\\nNewport, Newport 41099\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121210T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121210T190000\nDTSTAMP;VALUE=DATE-TIME:20121119T000959Z\nUID:a10ea5d6852ccc2b9bb234bef52348c1@cincymusic.com\nDESCRIPTION:Studio
+        89 w/ Studio 89\\, Steve Poltz\\,\\nhttp://cincymusic.com\n /shows/2012/12/studio-893\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/studio-893\nSUMMARY:Studio
+        89\nLOCATION:Studio 89\\nGriffin Hall\\nNunn Drive\\nNewport, Newport 41099\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121119T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121119T190000\nDTSTAMP;VALUE=DATE-TIME:20121119T000907Z\nUID:274bc9ced5d4932f6a19934cd1b8100e@cincymusic.com\nDESCRIPTION:12
+        Stones\\nhttp://cincymusic.com/shows/2012/11/12-stones\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/12-stones\nSUMMARY:12
+        Stones\nLOCATION:Thompson House\\n24 E 3rd St\\nNewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121202T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121202T190000\nDTSTAMP;VALUE=DATE-TIME:20121119T000944Z\nUID:ecb75b811da73c26052b10e99bebff3f@cincymusic.com\nDESCRIPTION:Koffin
+        Kats\\nhttp://cincymusic.com/shows/2012/12/koffin-kats\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/koffin-kats\nSUMMARY:Koffin
+        Kats\nLOCATION:Thompson House\\n24 E 3rd St\\nNewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121124T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121124T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000923Z\nUID:7e2decf62d3607ea326ea06835dfeb10@cincymusic.com\nDESCRIPTION:Detrimental
+        w/ Spence\\, Breakneck Pace\\, Origin of Ashes\\nhtt\n p://cincymusic.com/shows/2012/11/detrimental\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/detrimental\nSUMMARY:Detrimental\nLOCATION:Thompson
+        House\\n24 E 3rd St\\nNewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121126T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121126T190000\nDTSTAMP;VALUE=DATE-TIME:20121119T000929Z\nUID:a04a67ec5e8c22a67b0016669e7a77b2@cincymusic.com\nDESCRIPTION:No
+        Bragging Rights w/ Forever Came Calling\\, Altars\\nhttp://c\n incymusic.com/shows/2012/11/no-bragging-rights\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/no-bragging-rights\nSUMMARY:No
+        Bragging Rights\nLOCATION:Thompson House\\n24 E 3rd St\\nNewport, Newport
+        41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121201T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121130T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000938Z\nUID:276d44cdcc8ec2586a99a7eff09a650b@cincymusic.com\nDESCRIPTION:J-String
+        w/ Jacob Yates\\, Jessica Hendy\\nhttp://cincymusic.co\n m/shows/2012/11/j-string\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/j-string\nSUMMARY:J-String\nLOCATION:Thompson
+        House\\n24 E 3rd St\\nNewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121214T213000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121214T183000\nDTSTAMP;VALUE=DATE-TIME:20121119T001004Z\nUID:89a9246e8499229e448cebcc94557699@cincymusic.com\nDESCRIPTION:Deuce
+        w/ New Medicine\\nhttp://cincymusic.com/shows/2012/12/de\n uce\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/deuce\nSUMMARY:Deuce\nLOCATION:Thompson
+        House\\n24 E 3rd St\\nNewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121218T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121218T190000\nDTSTAMP;VALUE=DATE-TIME:20121119T001009Z\nUID:88d91e7809f1d2ed6fe6d62f784b1450@cincymusic.com\nDESCRIPTION:Dying
+        Fetus w/ Malignancy\\, Cerebral Bore\\, Beverly Hellfire\\\n , FENRIR\\, End
+        It With A Shotgun\\, Soul Rot\\nhttp://cincymusic.com/shows\n /2012/12/dying-fetus\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/dying-fetus\nSUMMARY:Dying
+        Fetus\nLOCATION:Thompson House\\n24 E 3rd St\\nNewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121229T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121229T190000\nDTSTAMP;VALUE=DATE-TIME:20121119T001025Z\nUID:b69d66ddb495bbf84d89fa8c531f61ff@cincymusic.com\nDESCRIPTION:The
+        Preserving Promise w/ Dead Society\\, Allies Aside\\, Arriv\n alry\\, Vanna
+        White\\, Emmaline\\, Hail to the King\\nhttp://cincymusic.com/\n shows/2012/12/the-preserving-promise\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/the-preserving-promise\nSUMMARY:The
+        Preserving Promise\nLOCATION:Thompson House\\n24 E 3rd St\\nNewport, Newport
+        41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121120T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121119T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000908Z\nUID:248b758bfdb2b69e1700fffad8ea4325@cincymusic.com\nDESCRIPTION:Open
+        Mic\\nhttp://cincymusic.com/shows/2012/11/open-mic4\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/open-mic4\nSUMMARY:Open
+        Mic\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121121T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121120T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000911Z\nUID:b6e0c1b2d6ad4275f4160e25631b6a08@cincymusic.com\nDESCRIPTION:Devout
+        Wax Vinyl Night\\nhttp://cincymusic.com/shows/2012/11/d\n evout-wax4\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/devout-wax4\nSUMMARY:Devout
+        Wax Vinyl Night\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E
+        6th St.\\nNewport\n , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121122T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121121T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000916Z\nUID:6b15a948d858ea0ca603611ed9a2dfd8@cincymusic.com\nDESCRIPTION:Dave
+        Hawkins\\nhttp://cincymusic.com/shows/2012/11/dave-hawkin\n s\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/dave-hawkins\nSUMMARY:Dave
+        Hawkins\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121125T003000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121124T213000\nDTSTAMP;VALUE=DATE-TIME:20121119T000926Z\nUID:f2aedc1de045d4de72428d190b114027@cincymusic.com\nDESCRIPTION:Ricky
+        Nye & The Red Hots\\nhttp://cincymusic.com/shows/2012/11\n /ricky-nye-the-red-hots\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/ricky-nye-the-red-hots\nSUMMARY:Ricky
+        Nye & The Red Hots\nLOCATION:The Southgate House Revival (The Lounge)\\n111
+        E 6th St.\\nNewport\n , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121125T210000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121125T180000\nDTSTAMP;VALUE=DATE-TIME:20121119T000928Z\nUID:54a439018d0b594567b7aa68648f7d2e@cincymusic.com\nDESCRIPTION:Kentucky
+        Timbre w/ Ed Vardiman of Straw Boss\\nhttp://cincymus\n ic.com/shows/2012/11/kentucky-timbre\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/kentucky-timbre\nSUMMARY:Kentucky
+        Timbre\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121127T003000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121126T213000\nDTSTAMP;VALUE=DATE-TIME:20121119T000929Z\nUID:ee2dcba7ec7079a95465720c045db05b@cincymusic.com\nDESCRIPTION:Open
+        Mic w/ with your host\\, Billy Catfish\\nhttp://cincymusic\n .com/shows/2012/11/open-mic5\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/open-mic5\nSUMMARY:Open
+        Mic\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121128T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121127T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000931Z\nUID:f94465fa05720eb70f44d5ac7ed04ba1@cincymusic.com\nDESCRIPTION:Devout
+        Wax Vinyl Night\\nhttp://cincymusic.com/shows/2012/11/d\n evout-wax5\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/devout-wax5\nSUMMARY:Devout
+        Wax Vinyl Night\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E
+        6th St.\\nNewport\n , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121129T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121128T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000934Z\nUID:c25d8ee25fb442690ca4677797e2f623@cincymusic.com\nDESCRIPTION:John
+        Davey\\nhttp://cincymusic.com/shows/2012/11/john-davey\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/john-davey\nSUMMARY:John
+        Davey\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121130T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121129T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000935Z\nUID:2654cb9edf39189308d250cfd0a4ec77@cincymusic.com\nDESCRIPTION:The
+        Original Hillbilly Thursday w/ The Original Hillbilly Thu\n rsday\\, Wolfcryer\\,
+        Wolfcryer\\nhttp://cincymusic.com/shows/2012/11/the-o\n riginal-hillbilly-thursday2\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/the-original-hillbilly-\n
+        thursday2\nSUMMARY:The Original Hillbilly Thursday\nLOCATION:The Southgate
+        House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121201T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121130T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000939Z\nUID:a1f4dac86c06dcb326b1e703c62d1aab@cincymusic.com\nDESCRIPTION:The
+        Webbs\\nhttp://cincymusic.com/shows/2012/11/the-webbs\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/the-webbs\nSUMMARY:The
+        Webbs\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121202T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121201T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000943Z\nUID:afb0c07bd64df8c13393ef60bf0d4492@cincymusic.com\nDESCRIPTION:Joe
+        Rollin' Porter\\nhttp://cincymusic.com/shows/2012/12/joe-r\n ollin-porter2\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/joe-rollin-porter2\nSUMMARY:Joe
+        Rollin' Porter\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E
+        6th St.\\nNewport\n , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121202T210000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121202T180000\nDTSTAMP;VALUE=DATE-TIME:20121119T000944Z\nUID:a7ebd23e70c0e03fb3ab56e0e1d8e2a6@cincymusic.com\nDESCRIPTION:Front
+        Porch Sundays w/ Front Porch Sundays\\, Kentucky Timbre\\\n , Ed Vardiman
+        of Straw Boss\\nhttp://cincymusic.com/shows/2012/12/front-p\n orch-sundays\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/front-porch-sundays\nSUMMARY:Front
+        Porch Sundays\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th
+        St.\\nNewport\n , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121204T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121203T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000947Z\nUID:3e861e570394bcf8266161adc2a40bf7@cincymusic.com\nDESCRIPTION:Open
+        Mic\\nhttp://cincymusic.com/shows/2012/12/open-mic\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/open-mic\nSUMMARY:Open
+        Mic\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121205T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121204T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000948Z\nUID:f619cbd2f8dee2918dcd24e1c96e679e@cincymusic.com\nDESCRIPTION:Devout
+        Wax Vinyl Night\\nhttp://cincymusic.com/shows/2012/12/d\n evout-wax\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/devout-wax\nSUMMARY:Devout
+        Wax Vinyl Night\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E
+        6th St.\\nNewport\n , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121206T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121205T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000949Z\nUID:12af579f705be223cb398d5723733e83@cincymusic.com\nDESCRIPTION:Lick
+        Skillet\\nhttp://cincymusic.com/shows/2012/12/lick-skille\n t\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/lick-skillet\nSUMMARY:Lick
+        Skillet\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121207T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121206T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000950Z\nUID:8471e3e900e1b887901b2a6ac5d986c7@cincymusic.com\nDESCRIPTION:The
+        Original Hillbilly Thursday w/ The Original Hillbilly Thu\n rsday\\, David
+        Newbould\\,\\nhttp://cincymusic.com/shows/2012/12/the-origin\n al-hillbilly-thursday\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/the-original-hillbilly-\n
+        thursday\nSUMMARY:The Original Hillbilly Thursday\nLOCATION:The Southgate
+        House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121208T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121207T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000953Z\nUID:c0bcbfb21f1f1cf04de5857a52ba04df@cincymusic.com\nDESCRIPTION:Ricky
+        Nye & Chris Douglas\\nhttp://cincymusic.com/shows/2012/1\n 2/ricky-nye-chris-douglas\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/ricky-nye-chris-douglas\nSUMMARY:Ricky
+        Nye & Chris Douglas\nLOCATION:The Southgate House Revival (The Lounge)\\n111
+        E 6th St.\\nNewport\n , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121209T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121208T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000956Z\nUID:3ee38d2b62b7ac248468a499f2d4916b@cincymusic.com\nDESCRIPTION:Bucktown
+        Kickback\\nhttp://cincymusic.com/shows/2012/12/buckto\n wn-kickback\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/bucktown-kickback\nSUMMARY:Bucktown
+        Kickback\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121209T210000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121209T180000\nDTSTAMP;VALUE=DATE-TIME:20121119T000958Z\nUID:33e09e312415d57e905f8044a5ca28c2@cincymusic.com\nDESCRIPTION:Front
+        Porch Sundays w/ Front Porch Sundays\\, Kentucky Timbre\\\n , Ed Vardiman
+        of Straw Boss\\nhttp://cincymusic.com/shows/2012/12/front-p\n orch-sundays2\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/front-porch-sundays2\nSUMMARY:Front
+        Porch Sundays\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th
+        St.\\nNewport\n , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121211T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121210T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001000Z\nUID:7f8052ab6f694211c8e6aaf1a8821a1f@cincymusic.com\nDESCRIPTION:Open
+        Mic\\nhttp://cincymusic.com/shows/2012/12/open-mic3\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/open-mic3\nSUMMARY:Open
+        Mic\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121212T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121211T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001002Z\nUID:2ecb69a54182a644d4a2ca0c0b542445@cincymusic.com\nDESCRIPTION:Devout
+        Wax Vinyl Night\\nhttp://cincymusic.com/shows/2012/12/d\n evout-wax3\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/devout-wax3\nSUMMARY:Devout
+        Wax Vinyl Night\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E
+        6th St.\\nNewport\n , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121214T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121213T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001003Z\nUID:d8b6cd7b64c7dd1a2aea9ab154d71a73@cincymusic.com\nDESCRIPTION:Elia
+        Goat and the Natural Horns\\nhttp://cincymusic.com/shows/\n 2012/12/elia-goat\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/elia-goat\nSUMMARY:Elia
+        Goat and the Natural Horns\nLOCATION:The Southgate House Revival (The Lounge)\\n111
+        E 6th St.\\nNewport\n , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121215T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121214T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001005Z\nUID:9f9254e1cba5510505e3a144ccc08002@cincymusic.com\nDESCRIPTION:The
+        Tadcasters\\nhttp://cincymusic.com/shows/2012/12/the-tadca\n sters\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/the-tadcasters\nSUMMARY:The
+        Tadcasters\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th
+        St.\\nNewport\n , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121216T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121215T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T001008Z\nUID:f62bbb41d837e00268039947ae935672@cincymusic.com\nDESCRIPTION:Hickory
+        Robot\\nhttp://cincymusic.com/shows/2012/12/hickoryrob\n ot\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/hickoryrobot\nSUMMARY:Hickory
+        Robot\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121218T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121217T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001009Z\nUID:a0f3f34e3ac1955a614addd5671b3acf@cincymusic.com\nDESCRIPTION:Open
+        Mic\\nhttp://cincymusic.com/shows/2012/12/open-mic4\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/open-mic4\nSUMMARY:Open
+        Mic\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121219T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121218T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001010Z\nUID:6d22f3708663158f8d876a1018c342f0@cincymusic.com\nDESCRIPTION:Devout
+        Wax Vinyl Night\\nhttp://cincymusic.com/shows/2012/12/d\n evout-wax4\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/devout-wax4\nSUMMARY:Devout
+        Wax Vinyl Night\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E
+        6th St.\\nNewport\n , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121220T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121219T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T001011Z\nUID:f35698e72dfebc4fa3069820b54d79d9@cincymusic.com\nDESCRIPTION:Gillgumesh\\nhttp://cincymusic.com/shows/2012/12/gillgumesh\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/gillgumesh\nSUMMARY:Gillgumesh\nLOCATION:The
+        Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n , Newport
+        41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121221T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121220T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T001011Z\nUID:a91e0a6af68ee0a0a6d2a5c52b58bc71@cincymusic.com\nDESCRIPTION:The
+        Original Hillbilly Thursday with Williams Family Christma\n s Show\\nhttp://cincymusic.com/shows/2012/12/the-original-hillbilly-thurs\n
+        day-with-williams-family-christmas-show\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/the-original-hillbilly-\n
+        thursday-with-williams-family-christmas-show\nSUMMARY:The Original Hillbilly
+        Thursday with Williams Family Christmas Sh\n ow\nLOCATION:The Southgate House
+        Revival (The Lounge)\\n111 E 6th St.\\nNewport\n , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121222T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121221T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001012Z\nUID:ec2d7d7fbf4b889ce8f3ea6a4a2f9c47@cincymusic.com\nDESCRIPTION:Parker
+        Smith\\nhttp://cincymusic.com/shows/2012/12/parker-smit\n h\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/parker-smith\nSUMMARY:Parker
+        Smith\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121223T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121222T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T001017Z\nUID:5ce5c623cc3b2a0518249774807dfe73@cincymusic.com\nDESCRIPTION:Alaskan
+        Ramblers\\nhttp://cincymusic.com/shows/2012/12/alaskan\n -ramblers\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/alaskan-ramblers\nSUMMARY:Alaskan
+        Ramblers\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121225T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121224T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001019Z\nUID:831f90345204147e192eac85b6ad34ef@cincymusic.com\nDESCRIPTION:Open
+        Mic\\nhttp://cincymusic.com/shows/2012/12/open-mic5\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/open-mic5\nSUMMARY:Open
+        Mic\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121228T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121227T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T001021Z\nUID:6bc90fea021777912b471eab69ef4fcd@cincymusic.com\nDESCRIPTION:The
+        Original Hillbilly Thursday with The Empty Threats\\nhttp:\n //cincymusic.com/shows/2012/12/the-original-hillbilly-thursday-with-the-\n
+        empty-threats\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/the-original-hillbilly-\n
+        thursday-with-the-empty-threats\nSUMMARY:The Original Hillbilly Thursday with
+        The Empty Threats\nLOCATION:The Southgate House Revival (The Lounge)\\n111
+        E 6th St.\\nNewport\n , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121229T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121228T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T001024Z\nUID:1d7d20dbe3d62db32f1b11da6a001fcf@cincymusic.com\nDESCRIPTION:Terminal
+        Union\\nhttp://cincymusic.com/shows/2012/12/terminal-\n union\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/terminal-union\nSUMMARY:Terminal
+        Union\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121230T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121229T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T001026Z\nUID:3e445fff761540747f2931876478d2b2@cincymusic.com\nDESCRIPTION:Arlo
+        McKinley & The Lonesome Sound w/ Pawns & Kings\\, Kelly T\n homas\\nhttp://cincymusic.com/shows/2012/12/arlo-mckinley-the-lonesome-so\n
+        und\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/arlo-mckinley-the-lones\n
+        ome-sound\nSUMMARY:Arlo McKinley & The Lonesome Sound\nLOCATION:The Southgate
+        House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121230T190000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121230T160000\nDTSTAMP;VALUE=DATE-TIME:20121119T001028Z\nUID:a7f65743c39f1622a897fb1a74184d81@cincymusic.com\nDESCRIPTION:Joshua
+        Black Wilkins Bloody Mary Matinee\\nhttp://cincymusic.c\n om/shows/2012/12/joshua-black-wilkins-bloody-mary-matinee\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/joshua-black-wilkins-bl\n
+        oody-mary-matinee\nSUMMARY:Joshua Black Wilkins Bloody Mary Matinee\nLOCATION:The
+        Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n , Newport
+        41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130101T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121231T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001029Z\nUID:7ba8ad076a14b7ac68e55c8d8f911657@cincymusic.com\nDESCRIPTION:Open
+        Mic\\nhttp://cincymusic.com/shows/2012/12/open-mic6\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/open-mic6\nSUMMARY:Open
+        Mic\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130103T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130102T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T001030Z\nUID:ef46ed54e9e2c375e77a80f5e27b5a75@cincymusic.com\nDESCRIPTION:Offland
+        Om\\nhttp://cincymusic.com/shows/2013/01/offland-om\nURL;VALUE=URI:http://cincymusic.com/shows/2013/01/offland-om\nSUMMARY:Offland
+        Om\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130106T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130105T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T001032Z\nUID:20113777c495d9ad0fb20d395bbd190e@cincymusic.com\nDESCRIPTION:Mudpies\\nhttp://cincymusic.com/shows/2013/01/mudpies\nURL;VALUE=URI:http://cincymusic.com/shows/2013/01/mudpies\nSUMMARY:Mudpies\nLOCATION:The
+        Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n , Newport
+        41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130129T003000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130128T213000\nDTSTAMP;VALUE=DATE-TIME:20121119T001038Z\nUID:7dbf293eee989c1fd9ad8ba25db817dc@cincymusic.com\nDESCRIPTION:Open
+        Mic w/ Open Mic\\, Mike Kuntz\\, with your host\\, Mike Kun\n tz of for algernon\\nhttp://cincymusic.com/shows/2013/01/open-mic\nURL;VALUE=URI:http://cincymusic.com/shows/2013/01/open-mic\nSUMMARY:Open
+        Mic\nLOCATION:The Southgate House Revival (The Lounge)\\n111 E 6th St.\\nNewport\n
+        , Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121120T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121119T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000909Z\nUID:676d796ec359cb8f1139f534e9f097c2@cincymusic.com\nDESCRIPTION:Pomegranates
+        w/ Hounds Below\\nhttp://cincymusic.com/shows/201\n 2/11/pomegranates\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/pomegranates\nSUMMARY:Pomegranates\nLOCATION:The
+        Southgate House Revival (The Sanctuary)\\n111 E 6th St.\\nNewp\n ort, Newport
+        41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121122T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121121T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000915Z\nUID:8c55068ba713eb127312b2fc0d352bee@cincymusic.com\nDESCRIPTION:The
+        Newbees\\nhttp://cincymusic.com/shows/2012/11/thenewbees\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/thenewbees\nSUMMARY:The
+        Newbees\nLOCATION:The Southgate House Revival (The Sanctuary)\\n111 E 6th
+        St.\\nNewp\n ort, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121123T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121123T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000919Z\nUID:c532c78c85e3717d195f7bb2adaada82@cincymusic.com\nDESCRIPTION:Heal
+        the Homeland: A Benefit Relief Show for Victims of Hurri\n cane Sandy w/ Heal
+        the Homeland: A Benefit Relief Show for Victims of Hu\n rricane Sandy\\, The
+        Crick Gypsies\\, Dave Hawkins & The Perfect Men\\, The\n  Crick Gypsies\\,
+        Del Rio\\, Carol Walker Band\\, Mark Utley\\, The Stories\\\n , Steve Saunders\\,
+        Kentucky Timbre\\, Tim Caudill\\, Cheryl Renee\\, Wild M\n ountain Berries\\nhttp://cincymusic.com/shows/2012/11/heal-the-homeland-a\n
+        -benefit-relief-show-for-victims-of-hurricane-sandy\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/heal-the-homeland-a-ben\n
+        efit-relief-show-for-victims-of-hurricane-sandy\nSUMMARY:Heal the Homeland:
+        A Benefit Relief Show for Victims of Hurricane\n  Sandy\nLOCATION:The Southgate
+        House Revival (The Sanctuary)\\n111 E 6th St.\\nNewp\n ort, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121125T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121124T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000925Z\nUID:520a3d082d984576fb740566a7387461@cincymusic.com\nDESCRIPTION:Tex
+        Schramm and the Radio King Cowboys w/ Straw Boss\\, The Ke\n ntucky Struts\\,
+        Mack West\\nhttp://cincymusic.com/shows/2012/11/tex-schra\n mm-and-the-radio-king-cowboys\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/tex-schramm-and-the-rad\n
+        io-king-cowboys\nSUMMARY:Tex Schramm and the Radio King Cowboys\nLOCATION:The
+        Southgate House Revival (The Sanctuary)\\n111 E 6th St.\\nNewp\n ort, Newport
+        41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121130T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121129T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000935Z\nUID:6c458ed1011cb83c1d49fc6531f4722a@cincymusic.com\nDESCRIPTION:Sassafraz
+        w/ Elemental Groove Theory (EGT)\\, The Cincy Brass\\\n nhttp://cincymusic.com/shows/2012/11/sassafraz\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/sassafraz\nSUMMARY:Sassafraz\nLOCATION:The
+        Southgate House Revival (The Sanctuary)\\n111 E 6th St.\\nNewp\n ort, Newport
+        41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121202T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121201T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000943Z\nUID:94b67d60336beb382c195b63093f884a@cincymusic.com\nDESCRIPTION:Supersuckers\\nhttp://cincymusic.com/shows/2012/12/supersucker\n
+        s\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/supersuckers\nSUMMARY:Supersuckers\nLOCATION:The
+        Southgate House Revival (The Sanctuary)\\n111 E 6th St.\\nNewp\n ort, Newport
+        41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121204T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121203T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000947Z\nUID:a2301edfb5810fe04d3e18ba31d3e0cb@cincymusic.com\nDESCRIPTION:The
+        Misfits\\nhttp://cincymusic.com/shows/2012/12/the-misfits\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/the-misfits\nSUMMARY:The
+        Misfits\nLOCATION:The Southgate House Revival (The Sanctuary)\\n111 E 6th
+        St.\\nNewp\n ort, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121208T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121207T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000953Z\nUID:ee08a74ab3d9a07801084061ff946583@cincymusic.com\nDESCRIPTION:The
+        Seedy Seeds w/ The Winter Sounds\\, The Ridges\\nhttp://cin\n cymusic.com/shows/2012/12/seedyseeds\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/seedyseeds\nSUMMARY:The
+        Seedy Seeds\nLOCATION:The Southgate House Revival (The Sanctuary)\\n111 E
+        6th St.\\nNewp\n ort, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121215T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121214T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001006Z\nUID:4ac3aeeb21b6754ed736a126c5f96728@cincymusic.com\nDESCRIPTION:The
+        Melismatics w/ Epicanthic (feat. Ryan Malott of 500 Miles\n  To Memphis)\\,
+        Noah Sugarman\\nhttp://cincymusic.com/shows/2012/12/the-me\n lismatics\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/the-melismatics\nSUMMARY:The
+        Melismatics\nLOCATION:The Southgate House Revival (The Sanctuary)\\n111 E
+        6th St.\\nNewp\n ort, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121223T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121222T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001015Z\nUID:3ac705659cadef213927495dd35e540a@cincymusic.com\nDESCRIPTION:Noah
+        Sugarman Christmas Show w/ Noah Sugarman Christmas Show\\\n , Noah Sugarman\\,\\nhttp://cincymusic.com/shows/2012/12/noah-sugarman-chr\n
+        istmas-show\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/noah-sugarman-christmas\n
+        -show\nSUMMARY:Noah Sugarman Christmas Show\nLOCATION:The Southgate House
+        Revival (The Sanctuary)\\n111 E 6th St.\\nNewp\n ort, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121223T233000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121223T203000\nDTSTAMP;VALUE=DATE-TIME:20121119T001017Z\nUID:41abd0731f79039efd56dc0f4567ca97@cincymusic.com\nDESCRIPTION:Kelly
+        Thomas w/ David Rhodes Brown\\, G. Burton\\, Chelisa Clif\n ton\\, Elton Clifton\\,
+        Mark Utley & Renee Frye of Magnolia Mountain\\, Sar\n ah Davis and Max Fender
+        of Alone at 3am\\, Veronica Grim\\, Moriah Lawson \n of Sassy Molasses\\nhttp://cincymusic.com/shows/2012/12/holiday-songwrite\n
+        rs-in-the-round-hosted-by-kelly-thomas\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/holiday-songwriters-in-\n
+        the-round-hosted-by-kelly-thomas\nSUMMARY:Kelly Thomas\nLOCATION:The Southgate
+        House Revival (The Sanctuary)\\n111 E 6th St.\\nNewp\n ort, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130106T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130105T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001031Z\nUID:0dce774907531b651033b19d5219d8e6@cincymusic.com\nDESCRIPTION:Lethal
+        w/ Graves Road\\, Pain Link\\nhttp://cincymusic.com/show\n s/2013/01/lethal\nURL;VALUE=URI:http://cincymusic.com/shows/2013/01/lethal\nSUMMARY:Lethal\nLOCATION:The
+        Southgate House Revival (The Sanctuary)\\n111 E 6th St.\\nNewp\n ort, Newport
+        41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121120T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121119T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000910Z\nUID:c463140273503e48b50fbc0e177bb712@cincymusic.com\nDESCRIPTION:Ten
+        Kens w/ Hot For Alice\\nhttp://cincymusic.com/shows/2012/1\n 1/ten-kens\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/ten-kens\nSUMMARY:Ten
+        Kens\nLOCATION:MOTR Pub\\n1345 Main Street\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121121T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121120T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000913Z\nUID:19141b5b02e613d2ff9e82731e0620d5@cincymusic.com\nDESCRIPTION:Writer's
+        Night w/ Writer's Night\\, Donna J (Fists of Love)\\,\\\n nhttp://cincymusic.com/shows/2012/11/writer-s-night\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/writer-s-night\nSUMMARY:Writer's
+        Night\nLOCATION:MOTR Pub\\n1345 Main Street\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121122T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121121T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000916Z\nUID:acaf1a79a536b1c8f672bf8351ededd2@cincymusic.com\nDESCRIPTION:The
+        Sundresses\\nhttp://cincymusic.com/shows/2012/11/thesundre\n sses3\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/thesundresses3\nSUMMARY:The
+        Sundresses\nLOCATION:MOTR Pub\\n1345 Main Street\\nCincinnati, Cincinnati
+        45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121124T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121123T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000922Z\nUID:5089caa5e2bc231ac0984a23fe4370b5@cincymusic.com\nDESCRIPTION:The
+        Cliftones\\nhttp://cincymusic.com/shows/2012/11/the-clifto\n nes\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/the-cliftones\nSUMMARY:The
+        Cliftones\nLOCATION:MOTR Pub\\n1345 Main Street\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121125T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121124T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000927Z\nUID:5f7fd6d53e0adbcc8e660146bc147783@cincymusic.com\nDESCRIPTION:Patrick
+        Sweany w/ The Kickaways\\nhttp://cincymusic.com/shows/\n 2012/11/patrick-sweany\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/patrick-sweany\nSUMMARY:Patrick
+        Sweany\nLOCATION:MOTR Pub\\n1345 Main Street\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121127T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121126T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000930Z\nUID:24bba9069d58ca4ffef5b1bf82dc1ea4@cincymusic.com\nDESCRIPTION:Royal
+        Bangs w/ Hot For Alice\\nhttp://cincymusic.com/shows/201\n 2/11/royal-bangs\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/royal-bangs\nSUMMARY:Royal
+        Bangs\nLOCATION:MOTR Pub\\n1345 Main Street\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121128T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121127T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000932Z\nUID:9e35c9794d46aa9c6901c938c3d80d35@cincymusic.com\nDESCRIPTION:Writer's
+        Night w/ Writer's Night\\, Lucas (of PGTE)\\,\\nhttp://\n cincymusic.com/shows/2012/11/writer-s-night3\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/writer-s-night3\nSUMMARY:Writer's
+        Night\nLOCATION:MOTR Pub\\n1345 Main Street\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121129T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121128T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000933Z\nUID:d4cc8d5d0188fe7242072920e265f234@cincymusic.com\nDESCRIPTION:Michael
+        McIntire and the Marmalade Brigade\\nhttp://cincymusic\n .com/shows/2012/11/marmalade-brigade\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/marmalade-brigade\nSUMMARY:Michael
+        McIntire and the Marmalade Brigade\nLOCATION:MOTR Pub\\n1345 Main Street\\nCincinnati,
+        Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121130T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121129T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000936Z\nUID:29e790468f6970d6c80b4a4273e127b9@cincymusic.com\nDESCRIPTION:Those
+        Crosstown Rivals w/ Mad Anthony\\nhttp://cincymusic.com/\n shows/2012/11/those-crosstown-rivals\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/those-crosstown-rivals\nSUMMARY:Those
+        Crosstown Rivals\nLOCATION:MOTR Pub\\n1345 Main Street\\nCincinnati, Cincinnati
+        45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121201T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121130T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000939Z\nUID:afffee1ff210b68b6c2a3d3581a1742a@cincymusic.com\nDESCRIPTION:Mr.
+        Gnome w/ Shadowraptr\\nhttp://cincymusic.com/shows/2012/11\n /mr-gnome\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/mr-gnome\nSUMMARY:Mr.
+        Gnome\nLOCATION:MOTR Pub\\n1345 Main Street\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121202T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121201T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000943Z\nUID:de035f378f097e80f6128d8b25dbfe53@cincymusic.com\nDESCRIPTION:Pujol\\nhttp://cincymusic.com/shows/2012/12/pujol\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/pujol\nSUMMARY:Pujol\nLOCATION:MOTR
+        Pub\\n1345 Main Street\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121203T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121202T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000946Z\nUID:e572ae61519cd464f9b803925ecaa8ef@cincymusic.com\nDESCRIPTION:Eternal
+        Summers w/ Us\\, Today\\nhttp://cincymusic.com/shows/20\n 12/12/eternal-summers\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/eternal-summers\nSUMMARY:Eternal
+        Summers\nLOCATION:MOTR Pub\\n1345 Main Street\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130106T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130105T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T001032Z\nUID:d753be78ff043301c018665a1c9ba22c@cincymusic.com\nDESCRIPTION:The
+        Tammy WhyNots w/ Tex Schramm and the Radio King Cowboys\\,\n  Doctor Bombay\\nhttp://cincymusic.com/shows/2013/01/the-tammy-whynots\nURL;VALUE=URI:http://cincymusic.com/shows/2013/01/the-tammy-whynots\nSUMMARY:The
+        Tammy WhyNots\nLOCATION:MOTR Pub\\n1345 Main Street\\nCincinnati, Cincinnati
+        45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121120T210000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121120T180000\nDTSTAMP;VALUE=DATE-TIME:20121119T000910Z\nUID:5381d5cf0c87172b6f798afefcbe1ca6@cincymusic.com\nDESCRIPTION:Motionless
+        In White w/ Chelsea Grin\\, Stick To Your Guns\\, Cr\n own The Empire\\, Upon
+        This Dawning\\nhttp://cincymusic.com/shows/2012/11/\n motionless-in-white\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/motionless-in-white\nSUMMARY:Motionless
+        In White\nLOCATION:Bogart's\\n2621 Vine Street\\nCincinnati, Cincinnati 45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121121T210000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121121T180000\nDTSTAMP;VALUE=DATE-TIME:20121119T000913Z\nUID:d5161648b8be315d18d5346a03b652b2@cincymusic.com\nDESCRIPTION:The
+        AP Tour w/ The AP Tour\\, The Ghost Inside\\, Miss May I\\, \n Like Moths
+        To Flames\\, The Amity Affliction\\, Glass Cloud\\nhttp://cincym\n usic.com/shows/2012/11/the-ap-tour\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/the-ap-tour\nSUMMARY:The
+        AP Tour\nLOCATION:Bogart's\\n2621 Vine Street\\nCincinnati, Cincinnati 45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121124T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121123T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000920Z\nUID:3f1df56a1c9ebdfc29b3e7785424efe0@cincymusic.com\nDESCRIPTION:Papadosio
+        w/ Papadosio  :::  T.e.t.i.o.s Album Release And To\n ur  :::  2012\\nhttp://cincymusic.com/shows/2012/11/papadosio\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/papadosio\nSUMMARY:Papadosio\nLOCATION:Bogart's\\n2621
+        Vine Street\\nCincinnati, Cincinnati 45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121201T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121201T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000939Z\nUID:9500db34aeb3b058b87b1a0d72c1a8ad@cincymusic.com\nDESCRIPTION:The
+        Dan Band\\nhttp://cincymusic.com/shows/2012/12/the-dan-ban\n d\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/the-dan-band\nSUMMARY:The
+        Dan Band\nLOCATION:Bogart's\\n2621 Vine Street\\nCincinnati, Cincinnati 45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121205T223000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121205T193000\nDTSTAMP;VALUE=DATE-TIME:20121119T000949Z\nUID:0bb8f796f06105b3eaa0b61386abfc6f@cincymusic.com\nDESCRIPTION:Silversun
+        Pickups\\nhttp://cincymusic.com/shows/2012/12/silver\n sun-pickups\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/silversun-pickups\nSUMMARY:Silversun
+        Pickups\nLOCATION:Bogart's\\n2621 Vine Street\\nCincinnati, Cincinnati 45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121211T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121211T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001002Z\nUID:f472f09d00d43bda9896306f90a91664@cincymusic.com\nDESCRIPTION:Josh
+        Krajcik\\nhttp://cincymusic.com/shows/2012/12/josh-krajci\n k\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/josh-krajcik\nSUMMARY:Josh
+        Krajcik\nLOCATION:Bogart's\\n2621 Vine Street\\nCincinnati, Cincinnati 45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121215T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121215T190000\nDTSTAMP;VALUE=DATE-TIME:20121119T001006Z\nUID:f660f5e5f4c24a31c74e32b343296f51@cincymusic.com\nDESCRIPTION:Steel
+        Panther w/ 96ROCK Heineken Yes Hello Xmas Show pres. by\n  Bed Head: Steel
+        Panther\\nhttp://cincymusic.com/shows/2012/12/steel-pant\n her\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/steel-panther\nSUMMARY:Steel
+        Panther\nLOCATION:Bogart's\\n2621 Vine Street\\nCincinnati, Cincinnati 45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121229T223000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121229T193000\nDTSTAMP;VALUE=DATE-TIME:20121119T001025Z\nUID:4b83707dd38d38bada8eb23175d31ea7@cincymusic.com\nDESCRIPTION:Bruce
+        In the Usa\\nhttp://cincymusic.com/shows/2012/12/bruce-i\n n-the-usa\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/bruce-in-the-usa\nSUMMARY:Bruce
+        In the Usa\nLOCATION:Bogart's\\n2621 Vine Street\\nCincinnati, Cincinnati
+        45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121230T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121230T190000\nDTSTAMP;VALUE=DATE-TIME:20121119T001028Z\nUID:cefd05026bbfc33d9a028af875eadf87@cincymusic.com\nDESCRIPTION:Third
+        Eye Blind\\nhttp://cincymusic.com/shows/2012/12/third-ey\n e-blind\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/third-eye-blind\nSUMMARY:Third
+        Eye Blind\nLOCATION:Bogart's\\n2621 Vine Street\\nCincinnati, Cincinnati 45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121231T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121231T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001029Z\nUID:e3c24a8684f944e03fe2d5df5895fe22@cincymusic.com\nDESCRIPTION:Afghan
+        Whigs\\nhttp://cincymusic.com/shows/2012/12/afghan-whig\n s2\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/afghan-whigs2\nSUMMARY:Afghan
+        Whigs\nLOCATION:Bogart's\\n2621 Vine Street\\nCincinnati, Cincinnati 45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130108T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130108T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001033Z\nUID:b95cb09c8ebf43b6f224687b6361cf08@cincymusic.com\nDESCRIPTION:Blackberry
+        Smoke w/ Ones to Watch Presents Blackberry Smoke\\n\n http://cincymusic.com/shows/2013/01/blackberry-smoke\nURL;VALUE=URI:http://cincymusic.com/shows/2013/01/blackberry-smoke\nSUMMARY:Blackberry
+        Smoke\nLOCATION:Bogart's\\n2621 Vine Street\\nCincinnati, Cincinnati 45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130125T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130125T190000\nDTSTAMP;VALUE=DATE-TIME:20121119T001037Z\nUID:ba7afe485a78057479fb8ccde741f802@cincymusic.com\nDESCRIPTION:Ed
+        Sheeran\\nhttp://cincymusic.com/shows/2013/01/ed-sheeran\nURL;VALUE=URI:http://cincymusic.com/shows/2013/01/ed-sheeran\nSUMMARY:Ed
+        Sheeran\nLOCATION:Bogart's\\n2621 Vine Street\\nCincinnati, Cincinnati 45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130127T213000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130127T183000\nDTSTAMP;VALUE=DATE-TIME:20121119T001038Z\nUID:3d8925e1f47cf27763fd92e156b7de2e@cincymusic.com\nDESCRIPTION:Flogging
+        Molly w/ Dave Hause\\, Skinny Lister\\nhttp://cincymus\n ic.com/shows/2013/01/flogging-molly\nURL;VALUE=URI:http://cincymusic.com/shows/2013/01/flogging-molly\nSUMMARY:Flogging
+        Molly\nLOCATION:Bogart's\\n2621 Vine Street\\nCincinnati, Cincinnati 45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130130T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130130T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001040Z\nUID:ad24af3737960e9477460971103df220@cincymusic.com\nDESCRIPTION:Down
+        w/ Warbeast\\nhttp://cincymusic.com/shows/2013/01/down\nURL;VALUE=URI:http://cincymusic.com/shows/2013/01/down\nSUMMARY:Down\nLOCATION:Bogart's\\n2621
+        Vine Street\\nCincinnati, Cincinnati 45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130207T223000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130207T193000\nDTSTAMP;VALUE=DATE-TIME:20121119T001040Z\nUID:2acb9637e1bbea7d161bf23b154bd752@cincymusic.com\nDESCRIPTION:Zoso:
+        Led Zeppelin Tribute w/ Zoso: Led Zeppelin Tribute\\, Zo\n so\\, Zoso - a
+        Tribute To Led Zeppelin\\nhttp://cincymusic.com/shows/2013/\n 02/zoso-led-zeppelin-tribute\nURL;VALUE=URI:http://cincymusic.com/shows/2013/02/zoso-led-zeppelin-tribu\n
+        te\nSUMMARY:Zoso: Led Zeppelin Tribute\nLOCATION:Bogart's\\n2621 Vine Street\\nCincinnati,
+        Cincinnati 45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130208T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130208T190000\nDTSTAMP;VALUE=DATE-TIME:20121119T001041Z\nUID:bcc8c97814e8f0701317e5498b4c0d50@cincymusic.com\nDESCRIPTION:The
+        Used w/ Crown The Empire\\, We Came As Romans\\, Mindflow\\n\n http://cincymusic.com/shows/2013/02/the-used\nURL;VALUE=URI:http://cincymusic.com/shows/2013/02/the-used\nSUMMARY:The
+        Used\nLOCATION:Bogart's\\n2621 Vine Street\\nCincinnati, Cincinnati 45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130216T233000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130216T203000\nDTSTAMP;VALUE=DATE-TIME:20121119T001043Z\nUID:d6b2420fe160a029da04baf1cc3821a4@cincymusic.com\nDESCRIPTION:Red
+        Wanting Blue\\nhttp://cincymusic.com/shows/2013/02/red-wan\n ting-blue\nURL;VALUE=URI:http://cincymusic.com/shows/2013/02/red-wanting-blue\nSUMMARY:Red
+        Wanting Blue\nLOCATION:Bogart's\\n2621 Vine Street\\nCincinnati, Cincinnati
+        45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121120T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121120T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000911Z\nUID:3454120042d7b161b8711282842074bd@cincymusic.com\nDESCRIPTION:Fearless
+        Kid\\nhttp://cincymusic.com/shows/2012/11/fearless-ki\n d\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/fearless-kid\nSUMMARY:Fearless
+        Kid\nLOCATION:The Mad Frog\\n1 E. McMillan St.\\nCincinnati, Cincinnati 45210\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121127T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121127T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000931Z\nUID:a1ce6ef54399a504844e391f04b6fb4d@cincymusic.com\nDESCRIPTION:Fearless
+        Kid\\nhttp://cincymusic.com/shows/2012/11/fearless-ki\n d2\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/fearless-kid2\nSUMMARY:Fearless
+        Kid\nLOCATION:The Mad Frog\\n1 E. McMillan St.\\nCincinnati, Cincinnati 45210\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121128T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121128T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000933Z\nUID:122d36c60852fd5d08c1b8891fc2cdb6@cincymusic.com\nDESCRIPTION:ROSEDALE
+        w/ Banducci and The Wheels\\nhttp://cincymusic.com/sh\n ows/2012/11/rosedale\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/rosedale\nSUMMARY:ROSEDALE\nLOCATION:The
+        Mad Frog\\n1 E. McMillan St.\\nCincinnati, Cincinnati 45210\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121201T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121130T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000938Z\nUID:ba3d81b4d6a118ab38a95c3e84a5c453@cincymusic.com\nDESCRIPTION:The
+        Slippery Lips w/ Shocker\\, Misunderstood\\nhttp://cincymus\n ic.com/shows/2012/11/the-slippery-lips2\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/the-slippery-lips2\nSUMMARY:The
+        Slippery Lips\nLOCATION:The Mad Frog\\n1 E. McMillan St.\\nCincinnati, Cincinnati
+        45210\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121204T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121204T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000948Z\nUID:09a089f2b48c0f5b4524373e66276599@cincymusic.com\nDESCRIPTION:Fearless
+        Kid\\nhttp://cincymusic.com/shows/2012/12/fearless-ki\n d\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/fearless-kid\nSUMMARY:Fearless
+        Kid\nLOCATION:The Mad Frog\\n1 E. McMillan St.\\nCincinnati, Cincinnati 45210\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121211T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121211T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001001Z\nUID:ef4aae4816809fa7eb2ca1776e674419@cincymusic.com\nDESCRIPTION:Fearless
+        Kid\\nhttp://cincymusic.com/shows/2012/12/fearless-ki\n d2\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/fearless-kid2\nSUMMARY:Fearless
+        Kid\nLOCATION:The Mad Frog\\n1 E. McMillan St.\\nCincinnati, Cincinnati 45210\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121215T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121215T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001007Z\nUID:b1e7b26c01b39a19db657c2642efbbcd@cincymusic.com\nDESCRIPTION:Lil
+        Cdre w/ Mr.Sneed \"Your Favorite Whiteboy\"\\, SPITFIRE\\, Sh\n okka Family\\,
+        Looney\\, LIB\\, Syko Logik\\, CornBred\\, B.Good\\, Brick Tigh\n t\\, EV
+        Of Dezekration\\, HooDu\\, Carnage\\, J-Sheetz\\, DFRNT MANE\\, Tchapo\n \\nhttp://cincymusic.com/shows/2012/12/lil-cdre\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/lil-cdre\nSUMMARY:Lil
+        Cdre\nLOCATION:The Mad Frog\\n1 E. McMillan St.\\nCincinnati, Cincinnati 45210\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121218T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121218T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001009Z\nUID:3bac57710da147599bdfde3134851e47@cincymusic.com\nDESCRIPTION:Fearless
+        Kid\\nhttp://cincymusic.com/shows/2012/12/fearless-ki\n d3\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/fearless-kid3\nSUMMARY:Fearless
+        Kid\nLOCATION:The Mad Frog\\n1 E. McMillan St.\\nCincinnati, Cincinnati 45210\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121222T210000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121222T180000\nDTSTAMP;VALUE=DATE-TIME:20121119T001014Z\nUID:7a8abad2fd63bfb8036a740fe38c9a2f@cincymusic.com\nDESCRIPTION:2nd
+        & Broadway\\nhttp://cincymusic.com/shows/2012/12/2nd-broad\n way\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/2nd-broadway\nSUMMARY:2nd
+        & Broadway\nLOCATION:The Mad Frog\\n1 E. McMillan St.\\nCincinnati, Cincinnati
+        45210\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121224T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121223T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001018Z\nUID:2c0e525fab4643b323fdad3da183903c@cincymusic.com\nDESCRIPTION:Calamity
+        Days\\nhttp://cincymusic.com/shows/2012/12/calamity-d\n ays2\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/calamity-days2\nSUMMARY:Calamity
+        Days\nLOCATION:The Mad Frog\\n1 E. McMillan St.\\nCincinnati, Cincinnati 45210\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121225T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121225T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001020Z\nUID:82fc7ff9c70433ec23f2632ef5ff8731@cincymusic.com\nDESCRIPTION:Fearless
+        Kid\\nhttp://cincymusic.com/shows/2012/12/fearless-ki\n d4\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/fearless-kid4\nSUMMARY:Fearless
+        Kid\nLOCATION:The Mad Frog\\n1 E. McMillan St.\\nCincinnati, Cincinnati 45210\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121229T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121228T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T001024Z\nUID:51146322fa9406a1dd37c50b2d81526e@cincymusic.com\nDESCRIPTION:Moriah
+        Haven Lawson (Sassy Molasses) w/ DUB Locks\\, DWB\\, Riv\n er City Ransom\\,
+        Revenge PiÃ±ata\\, Meiosis\\, Perfect Norm\\, Jamwave\\, \n Counterfeit Money
+        Machine\\, Johnny Quest\\, Chick Pimp\\, Coke Dealer at a\n  Bar\\, Chick
+        Pimp\\, Coke Dealer at a Bar\\, Evan Ray Luse\\nhttp://cincymu\n sic.com/shows/2012/12/moriah-haven-lawson-sassy-molasses\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/moriah-haven-lawson-sas\n
+        sy-molasses\nSUMMARY:Moriah Haven Lawson (Sassy Molasses)\nLOCATION:The Mad
+        Frog\\n1 E. McMillan St.\\nCincinnati, Cincinnati 45210\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130212T150000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130212T120000\nDTSTAMP;VALUE=DATE-TIME:20121119T001042Z\nUID:98b8372b9c378c56a0fb36399d002dd0@cincymusic.com\nDESCRIPTION:Jerad
+        Finck\\nhttp://cincymusic.com/shows/2013/02/jerad-finck\nURL;VALUE=URI:http://cincymusic.com/shows/2013/02/jerad-finck\nSUMMARY:Jerad
+        Finck\nLOCATION:The Mad Frog\\n1 E. McMillan St.\\nCincinnati, Cincinnati
+        45210\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130212T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130212T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001042Z\nUID:980c251dec2ab40a57c90eceefdc6ae2@cincymusic.com\nDESCRIPTION:dada\\nhttp://cincymusic.com/shows/2013/02/dada\nURL;VALUE=URI:http://cincymusic.com/shows/2013/02/dada\nSUMMARY:dada\nLOCATION:The
+        Mad Frog\\n1 E. McMillan St.\\nCincinnati, Cincinnati 45210\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121121T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121120T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000912Z\nUID:8e1ff3337b87c1dc852982fd4fbc2824@cincymusic.com\nDESCRIPTION:Rumpke
+        Mountain Boys\\nhttp://cincymusic.com/shows/2012/11/rum\n pke-mountain-boys4\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/rumpke-mountain-boys4\nSUMMARY:Rumpke
+        Mountain Boys\nLOCATION:Stanley's Pub\\n323 Stanley Ave.\\nCincinnati, Cincinnati
+        45226\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121122T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121121T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000915Z\nUID:2842e386a7ae16c6e803b7e4e7c6e0d6@cincymusic.com\nDESCRIPTION:Tattered
+        Roots w/ The Ohms\\nhttp://cincymusic.com/shows/2012/\n 11/tattered-roots\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/tattered-roots\nSUMMARY:Tattered
+        Roots\nLOCATION:Stanley's Pub\\n323 Stanley Ave.\\nCincinnati, Cincinnati
+        45226\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121124T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121123T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000921Z\nUID:50d74cb784e8b0bd9441a9d8347e3dc1@cincymusic.com\nDESCRIPTION:Terrapin
+        Moon\\nhttp://cincymusic.com/shows/2012/11/terrapin-m\n oon\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/terrapin-moon\nSUMMARY:Terrapin
+        Moon\nLOCATION:Stanley's Pub\\n323 Stanley Ave.\\nCincinnati, Cincinnati 45226\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121128T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121127T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000932Z\nUID:87702a384b632c32577db924ac9e7689@cincymusic.com\nDESCRIPTION:Rumpke
+        Mountain Boys\\nhttp://cincymusic.com/shows/2012/11/rum\n pke-mountain-boys8\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/rumpke-mountain-boys8\nSUMMARY:Rumpke
+        Mountain Boys\nLOCATION:Stanley's Pub\\n323 Stanley Ave.\\nCincinnati, Cincinnati
+        45226\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121201T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121201T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000940Z\nUID:bc8573dfe720c2a2a7b0dc63860591aa@cincymusic.com\nDESCRIPTION:Don't
+        Fear The Satellites w/ The Alpine Ghost\\, Majestic Man\\\n nhttp://cincymusic.com/shows/2012/12/dont-fear-the-satellites\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/dont-fear-the-satellite\n
+        s\nSUMMARY:Don't Fear The Satellites\nLOCATION:Stanley's Pub\\n323 Stanley
+        Ave.\\nCincinnati, Cincinnati 45226\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121222T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121221T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001013Z\nUID:ec70a20f4099e1f15b081d477db80033@cincymusic.com\nDESCRIPTION:The
+        Manifest Station\\nhttp://cincymusic.com/shows/2012/12/man\n ifest-station\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/manifest-station\nSUMMARY:The
+        Manifest Station\nLOCATION:Stanley's Pub\\n323 Stanley Ave.\\nCincinnati,
+        Cincinnati 45226\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121121T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121120T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000913Z\nUID:b475e3bfd12324a57dff27627920e581@cincymusic.com\nDESCRIPTION:White
+        Walls\\nhttp://cincymusic.com/shows/2012/11/white-walls\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/white-walls\nSUMMARY:White
+        Walls\nLOCATION:The Comet\\n4579 Hamilton Avenue\\nCincinnati, Cincinnati
+        45223\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121122T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121121T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000917Z\nUID:c10403f16b5b17533f3092ea7cd89543@cincymusic.com\nDESCRIPTION:Alone
+        at 3am w/ Jacob Tippey\\, Matt Woods\\nhttp://cincymusic.\n com/shows/2012/11/alone-at-3am\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/alone-at-3am\nSUMMARY:Alone
+        at 3am\nLOCATION:The Comet\\n4579 Hamilton Avenue\\nCincinnati, Cincinnati
+        45223\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121124T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121123T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000922Z\nUID:cd515d983042472e63ec8e0a5a6f3779@cincymusic.com\nDESCRIPTION:Steve
+        Schmidt Trio\\nhttp://cincymusic.com/shows/2012/11/steve\n -schmidt-trio\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/steve-schmidt-trio\nSUMMARY:Steve
+        Schmidt Trio\nLOCATION:The Comet\\n4579 Hamilton Avenue\\nCincinnati, Cincinnati
+        45223\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121125T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121124T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000927Z\nUID:49cad5cbeeb1e1cb8220eb191be961ad@cincymusic.com\nDESCRIPTION:Mt.
+        Carmel\\nhttp://cincymusic.com/shows/2012/11/mt-carmel\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/mt-carmel\nSUMMARY:Mt.
+        Carmel\nLOCATION:The Comet\\n4579 Hamilton Avenue\\nCincinnati, Cincinnati
+        45223\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121125T223000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121125T193000\nDTSTAMP;VALUE=DATE-TIME:20121119T000928Z\nUID:2ddbbceca115f91afffe1ceeee619674@cincymusic.com\nDESCRIPTION:Comet
+        Bluegrass Allstars\\nhttp://cincymusic.com/shows/2012/11\n /cometbluegrass\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/cometbluegrass\nSUMMARY:Comet
+        Bluegrass Allstars\nLOCATION:The Comet\\n4579 Hamilton Avenue\\nCincinnati,
+        Cincinnati 45223\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121127T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121126T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000930Z\nUID:98ab0cdacf6fb100479eaf8875b64286@cincymusic.com\nDESCRIPTION:Roomrunner
+        w/ White Walls\\nhttp://cincymusic.com/shows/2012/1\n 1/roomrunner\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/roomrunner\nSUMMARY:Roomrunner\nLOCATION:The
+        Comet\\n4579 Hamilton Avenue\\nCincinnati, Cincinnati 45223\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121129T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121128T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000934Z\nUID:fa35ea85fcce0c3732606d0eeb0ab596@cincymusic.com\nDESCRIPTION:Bazooka
+        w/ Paint Fumes\\nhttp://cincymusic.com/shows/2012/11/b\n azooka\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/bazooka\nSUMMARY:Bazooka\nLOCATION:The
+        Comet\\n4579 Hamilton Avenue\\nCincinnati, Cincinnati 45223\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121202T223000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121202T193000\nDTSTAMP;VALUE=DATE-TIME:20121119T000945Z\nUID:f11572b8c07b6b06018f241137bfe090@cincymusic.com\nDESCRIPTION:Comet
+        Bluegrass Allstars\\nhttp://cincymusic.com/shows/2012/12\n /cometbluegrass\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/cometbluegrass\nSUMMARY:Comet
+        Bluegrass Allstars\nLOCATION:The Comet\\n4579 Hamilton Avenue\\nCincinnati,
+        Cincinnati 45223\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121121T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121121T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000914Z\nUID:eb29c92745755a0912c05ecf3cc9ae86@cincymusic.com\nDESCRIPTION:Chris
+        Isaak\\nhttp://cincymusic.com/shows/2012/11/chris-isaak\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/chris-isaak\nSUMMARY:Chris
+        Isaak\nLOCATION:The Taft Theatre\\n317 East 5th St.\\nCincinnati, Cincinnati
+        45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121201T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121201T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000940Z\nUID:72e718891f44cadbd5e20dc79e78f3b3@cincymusic.com\nDESCRIPTION:Over
+        The Rhine\\nhttp://cincymusic.com/shows/2012/12/overtherh\n ine\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/overtherhine\nSUMMARY:Over
+        The Rhine\nLOCATION:The Taft Theatre\\n317 East 5th St.\\nCincinnati, Cincinnati
+        45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130111T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130111T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001034Z\nUID:d705b894de60fee664378cfe4be6b461@cincymusic.com\nDESCRIPTION:Grace
+        Potter & The Nocturnals\\nhttp://cincymusic.com/shows/20\n 13/01/grace-potter-the-nocturnals\nURL;VALUE=URI:http://cincymusic.com/shows/2013/01/grace-potter-the-noctur\n
+        nals\nSUMMARY:Grace Potter & The Nocturnals\nLOCATION:The Taft Theatre\\n317
+        East 5th St.\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130112T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130112T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001035Z\nUID:a41e5d6285a03a10f3b121c821f6c350@cincymusic.com\nDESCRIPTION:Elvis
+        Tribute Artist Spectacular\\nhttp://cincymusic.com/shows\n /2013/01/elvis-tribute-artist-spectacular\nURL;VALUE=URI:http://cincymusic.com/shows/2013/01/elvis-tribute-artist-sp\n
+        ectacular\nSUMMARY:Elvis Tribute Artist Spectacular\nLOCATION:The Taft Theatre\\n317
+        East 5th St.\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130207T223000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130207T193000\nDTSTAMP;VALUE=DATE-TIME:20121119T001041Z\nUID:a332c587ce8495ad1e2e489950de51f1@cincymusic.com\nDESCRIPTION:An
+        Acoustic Evening With Matisyahu w/ An Acoustic Evening Wit\n h Matisyahu\\,
+        Matisyahu\\,\\nhttp://cincymusic.com/shows/2013/02/an-acoust\n ic-evening-with-matisyahu\nURL;VALUE=URI:http://cincymusic.com/shows/2013/02/an-acoustic-evening-wit\n
+        h-matisyahu\nSUMMARY:An Acoustic Evening With Matisyahu\nLOCATION:The Taft
+        Theatre\\n317 East 5th St.\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121121T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121121T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000914Z\nUID:57897fee3d5be01a68b653a988f8b957@cincymusic.com\nDESCRIPTION:The
+        Generics\\nhttp://cincymusic.com/shows/2012/11/the-generic\n s\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/the-generics\nSUMMARY:The
+        Generics\nLOCATION:20th Century Theatre\\n3021 Madison Road\\nCincinnati,
+        Cincinnati \n 45209\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121129T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121129T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000934Z\nUID:56911b87f5cf8d19dd98455cbaf381fb@cincymusic.com\nDESCRIPTION:Tim
+        O'Brien\\nhttp://cincymusic.com/shows/2012/11/tim-o-brien\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/tim-o-brien\nSUMMARY:Tim
+        O'Brien\nLOCATION:20th Century Theatre\\n3021 Madison Road\\nCincinnati, Cincinnati
+        \n 45209\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121209T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121209T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000959Z\nUID:db6c80a7d19f91c719ba24cf3ddb9dcb@cincymusic.com\nDESCRIPTION:Chappo
+        w/ Monogold\\, We Are Snapdragon\\nhttp://cincymusic.com\n /shows/2012/12/chappo\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/chappo\nSUMMARY:Chappo\nLOCATION:20th
+        Century Theatre\\n3021 Madison Road\\nCincinnati, Cincinnati \n 45209\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130109T233000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130109T203000\nDTSTAMP;VALUE=DATE-TIME:20121119T001034Z\nUID:8bd0773c10fb8f02b716ec77593cc544@cincymusic.com\nDESCRIPTION:G.
+        Love & Special Sauce w/ Swear and Shake\\nhttp://cincymusic\n .com/shows/2013/01/g-love-special-sauce\nURL;VALUE=URI:http://cincymusic.com/shows/2013/01/g-love-special-sauce\nSUMMARY:G.
+        Love & Special Sauce\nLOCATION:20th Century Theatre\\n3021 Madison Road\\nCincinnati,
+        Cincinnati \n 45209\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121123T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121123T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000917Z\nUID:f0b7c8504081c9225d47b7bc9649e698@cincymusic.com\nDESCRIPTION:Pluto
+        Revolts w/ Counterfeit Money Machine\\, The Upset Victor\n y\\, One Day Steady\\,
+        The Getaway\\nhttp://cincymusic.com/shows/2012/11/pl\n utorevolts3\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/plutorevolts3\nSUMMARY:Pluto
+        Revolts\nLOCATION:Madison Theater\\n730 Madison Ave.\\nCovington, Covington
+        41011\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121125T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121124T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000924Z\nUID:fad34f42c1e6ec507e1e43c6697f0c4d@cincymusic.com\nDESCRIPTION:500
+        Miles To Memphis w/ The Sugar\\, Those Crosstown Rivals\\nh\n ttp://cincymusic.com/shows/2012/11/500mtm\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/500mtm\nSUMMARY:500
+        Miles To Memphis\nLOCATION:Madison Theater\\n730 Madison Ave.\\nCovington,
+        Covington 41011\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121130T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121130T190000\nDTSTAMP;VALUE=DATE-TIME:20121119T000936Z\nUID:7b823102efdf4a8e6ae21fef30e70a45@cincymusic.com\nDESCRIPTION:Asking
+        Alexandria w/ I See Stars\\, As I Lay Dying\\, Memphis M\n ay Fire\\, Atilla\\,
+        Come The Dawn\\nhttp://cincymusic.com/shows/2012/11/as\n king-alexandria\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/asking-alexandria\nSUMMARY:Asking
+        Alexandria\nLOCATION:Madison Theater\\n730 Madison Ave.\\nCovington, Covington
+        41011\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121201T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121201T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000940Z\nUID:023180fa407804e80c0093c159b4e278@cincymusic.com\nDESCRIPTION:Winterfest
+        w/ Winterfest\\, Winterhymn\\,\\nhttp://cincymusic.co\n m/shows/2012/12/winterfest\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/winterfest\nSUMMARY:Winterfest\nLOCATION:Madison
+        Theater\\n730 Madison Ave.\\nCovington, Covington 41011\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121208T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121208T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000954Z\nUID:b43da631af51047dad703b6aa02c12d8@cincymusic.com\nDESCRIPTION:Seven
+        Mary Three w/ Nerver\\, Sinful Crow\\, Seven Circle Sunri\n se\\, Lust & Violence\\,
+        Rootbound\\nhttp://cincymusic.com/shows/2012/12/se\n ven-mary-three\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/seven-mary-three\nSUMMARY:Seven
+        Mary Three\nLOCATION:Madison Theater\\n730 Madison Ave.\\nCovington, Covington
+        41011\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121211T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121211T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001001Z\nUID:f653e17af479f3044ff07bf1116b6e47@cincymusic.com\nDESCRIPTION:Zappa
+        Plays Zappa\\nhttp://cincymusic.com/shows/2012/12/zappa-\n plays-zappa\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/zappa-plays-zappa\nSUMMARY:Zappa
+        Plays Zappa\nLOCATION:Madison Theater\\n730 Madison Ave.\\nCovington, Covington
+        41011\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121212T223000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121212T193000\nDTSTAMP;VALUE=DATE-TIME:20121119T001003Z\nUID:e6a83eeb12ff6349d40f69df5dc0b502@cincymusic.com\nDESCRIPTION:I
+        Fight Dragons w/ Skyfox\\, The Protomen\\, MC Lars\\nhttp://ci\n ncymusic.com/shows/2012/12/i-fight-dragons\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/i-fight-dragons\nSUMMARY:I
+        Fight Dragons\nLOCATION:Madison Theater\\n730 Madison Ave.\\nCovington, Covington
+        41011\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121221T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121221T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001011Z\nUID:bad76d46a8167e7033cad0fc8fa92f09@cincymusic.com\nDESCRIPTION:Pop
+        Evil w/ Altered\\nhttp://cincymusic.com/shows/2012/12/pop-\n evil\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/pop-evil\nSUMMARY:Pop
+        Evil\nLOCATION:Madison Theater\\n730 Madison Ave.\\nCovington, Covington 41011\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121229T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121229T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001025Z\nUID:98fc1ed2ee90f9dce657cfb6c6baed48@cincymusic.com\nDESCRIPTION:Foxy
+        Shazam\\nhttp://cincymusic.com/shows/2012/12/foxyshazam\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/foxyshazam\nSUMMARY:Foxy
+        Shazam\nLOCATION:Madison Theater\\n730 Madison Ave.\\nCovington, Covington
+        41011\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130105T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130105T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001030Z\nUID:a59134ac04c5046007ec232942dffa9e@cincymusic.com\nDESCRIPTION:Oval
+        Opus\\nhttp://cincymusic.com/shows/2013/01/ovalopus\nURL;VALUE=URI:http://cincymusic.com/shows/2013/01/ovalopus\nSUMMARY:Oval
+        Opus\nLOCATION:Madison Theater\\n730 Madison Ave.\\nCovington, Covington 41011\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121123T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121123T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000918Z\nUID:9127e444cdf8595077098143711db7f1@cincymusic.com\nDESCRIPTION:The
+        Killtones\\nhttp://cincymusic.com/shows/2012/11/the-killto\n nes\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/the-killtones\nSUMMARY:The
+        Killtones\nLOCATION:Mainstay Rock Bar\\n301 West 5th St.\\nCincinnati, Cincinnati
+        4520\n 2\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121208T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121208T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000955Z\nUID:a974a276a364a3128c4b66f74d405163@cincymusic.com\nDESCRIPTION:Absinthe
+        Junk w/ Chakras\\nhttp://cincymusic.com/shows/2012/12\n /absinthe-junk\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/absinthe-junk\nSUMMARY:Absinthe
+        Junk\nLOCATION:Mainstay Rock Bar\\n301 West 5th St.\\nCincinnati, Cincinnati
+        4520\n 2\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121222T130000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121222T100000\nDTSTAMP;VALUE=DATE-TIME:20121119T001014Z\nUID:e3bba8b5ddd6b54391f526111841b223@cincymusic.com\nDESCRIPTION:Mangrenade
+        w/ The Slippery Lips\\nhttp://cincymusic.com/shows/\n 2012/12/mangrenade\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/mangrenade\nSUMMARY:Mangrenade\nLOCATION:Mainstay
+        Rock Bar\\n301 West 5th St.\\nCincinnati, Cincinnati 4520\n 2\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121223T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121222T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T001016Z\nUID:0b29c1981ce1008f8338365fff94d643@cincymusic.com\nDESCRIPTION:Mangrenade
+        & The Slippery Lips w/ Mangrenade & The Slippery L\n ips\\, Mangrenade\\,
+        The Slippery Lips\\nhttp://cincymusic.com/shows/2012/1\n 2/mangrenade-the-slippery-lips\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/mangrenade-the-slippery\n
+        -lips\nSUMMARY:Mangrenade & The Slippery Lips\nLOCATION:Mainstay Rock Bar\\n301
+        West 5th St.\\nCincinnati, Cincinnati 4520\n 2\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121230T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121229T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T001027Z\nUID:fa19c195ae172cf7126d43ed600c16ce@cincymusic.com\nDESCRIPTION:Dr
+        Bombay & The Atomic Bachelor Pad w/ Deadly Sins Burlesque\\\n nhttp://cincymusic.com/shows/2012/12/dr-bombay-atomic\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/dr-bombay-atomic\nSUMMARY:Dr
+        Bombay & The Atomic Bachelor Pad\nLOCATION:Mainstay Rock Bar\\n301 West 5th
+        St.\\nCincinnati, Cincinnati 4520\n 2\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130113T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130112T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T001036Z\nUID:a89107a0092bdfe0a44a257b62979450@cincymusic.com\nDESCRIPTION:Dr
+        Bombay & The Atomic Bachelor Pad w/ Mangrenade\\nhttp://cin\n cymusic.com/shows/2013/01/dr-bombay-atomic\nURL;VALUE=URI:http://cincymusic.com/shows/2013/01/dr-bombay-atomic\nSUMMARY:Dr
+        Bombay & The Atomic Bachelor Pad\nLOCATION:Mainstay Rock Bar\\n301 West 5th
+        St.\\nCincinnati, Cincinnati 4520\n 2\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130118T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130118T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001036Z\nUID:3592edc09faae2c705bb367b3c86c35f@cincymusic.com\nDESCRIPTION:Damn
+        It To Hell w/ Sulla\\nhttp://cincymusic.com/shows/2013/01\n /damn-it-to-hell\nURL;VALUE=URI:http://cincymusic.com/shows/2013/01/damn-it-to-hell\nSUMMARY:Damn
+        It To Hell\nLOCATION:Mainstay Rock Bar\\n301 West 5th St.\\nCincinnati, Cincinnati
+        4520\n 2\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121124T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121123T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000919Z\nUID:11fb9947888be65019b018e3760e981d@cincymusic.com\nDESCRIPTION:psychodots\\nhttp://cincymusic.com/shows/2012/11/psychodots\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/psychodots\nSUMMARY:psychodots\nLOCATION:The
+        Taft Theatre (Ballroom)\\n317 East 5th St.\\nCincinnati, Cinci\n nnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121125T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121124T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000924Z\nUID:edeae1bf7f364c3904b89859eb26efe1@cincymusic.com\nDESCRIPTION:Reverend
+        Peyton's Big Damn Band w/ The Tillers\\nhttp://cincym\n usic.com/shows/2012/11/reverend-peytons-big-damn-band2\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/reverend-peytons-big-da\n
+        mn-band2\nSUMMARY:Reverend Peyton's Big Damn Band\nLOCATION:The Taft Theatre
+        (Ballroom)\\n317 East 5th St.\\nCincinnati, Cinci\n nnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121208T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121208T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000955Z\nUID:3ed75b7f69339476ba07068cc356002d@cincymusic.com\nDESCRIPTION:Wanda
+        Jackson w/ Jonny Fritz\\, Frontier Ruckus\\nhttp://cincym\n usic.com/shows/2012/12/wanda-jackson\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/wanda-jackson\nSUMMARY:Wanda
+        Jackson\nLOCATION:The Taft Theatre (Ballroom)\\n317 East 5th St.\\nCincinnati,
+        Cinci\n nnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130214T003000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130213T213000\nDTSTAMP;VALUE=DATE-TIME:20121119T001043Z\nUID:3e3d1c0e7505451d7b086d70b4df8eb9@cincymusic.com\nDESCRIPTION:Chris
+        Knight\\nhttp://cincymusic.com/shows/2013/02/chris-knigh\n t\nURL;VALUE=URI:http://cincymusic.com/shows/2013/02/chris-knight\nSUMMARY:Chris
+        Knight\nLOCATION:The Taft Theatre (Ballroom)\\n317 East 5th St.\\nCincinnati,
+        Cinci\n nnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121124T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121123T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000920Z\nUID:765c2a05779d8c1a64f173aed1ffe75e@cincymusic.com\nDESCRIPTION:The
+        Lewis Brothers\\nhttp://cincymusic.com/shows/2012/11/the-l\n ewis-brothers\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/the-lewis-brothers\nSUMMARY:The
+        Lewis Brothers\nLOCATION:The Southgate House Revival (The Revival Room)\\n111
+        E 6th St.\\nN\n ewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121125T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121124T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000925Z\nUID:b6ef84981fd94da9c67b92f56dcc5e25@cincymusic.com\nDESCRIPTION:Homemade
+        Drugs CD Release Show w/ Mardou\\, Harlequins\\, Capta\n in Missouri\\nhttp://cincymusic.com/shows/2012/11/homemade-drugs-cd-relea\n
+        se-show\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/homemade-drugs-cd-relea\n
+        se-show\nSUMMARY:Homemade Drugs CD Release Show\nLOCATION:The Southgate House
+        Revival (The Revival Room)\\n111 E 6th St.\\nN\n ewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121201T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121130T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000938Z\nUID:56fb8e8d83de5821096a564799225130@cincymusic.com\nDESCRIPTION:Dr
+        Bombay & The Atomic Bachelor Pad w/ The Loveless\\, Ford Th\n eatre Reunion\\nhttp://cincymusic.com/shows/2012/11/dr-bombay-atomic\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/dr-bombay-atomic\nSUMMARY:Dr
+        Bombay & The Atomic Bachelor Pad\nLOCATION:The Southgate House Revival (The
+        Revival Room)\\n111 E 6th St.\\nN\n ewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121202T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121201T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000942Z\nUID:d3aec96dd7b76117c338ccacbbe46428@cincymusic.com\nDESCRIPTION:Midnight
+        Ghost Train\\nhttp://cincymusic.com/shows/2012/12/mid\n night-ghost-train\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/midnight-ghost-train\nSUMMARY:Midnight
+        Ghost Train\nLOCATION:The Southgate House Revival (The Revival Room)\\n111
+        E 6th St.\\nN\n ewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121207T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121206T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000950Z\nUID:6aac8ec3f1b92724171edde2dcfc5085@cincymusic.com\nDESCRIPTION:Cougar
+        Ace w/ A Juliet Bender\\, Team Void\\nhttp://cincymusic.\n com/shows/2012/12/cougar-ace\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/cougar-ace\nSUMMARY:Cougar
+        Ace\nLOCATION:The Southgate House Revival (The Revival Room)\\n111 E 6th St.\\nN\n
+        ewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121208T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121207T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000952Z\nUID:02f024bd4c851053134c6b06c727bc67@cincymusic.com\nDESCRIPTION:Valley
+        of the Sun w/ Atlantis Becoming\\, Lemon Sky\\nhttp://ci\n ncymusic.com/shows/2012/12/valley-of-the-sun\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/valley-of-the-sun\nSUMMARY:Valley
+        of the Sun\nLOCATION:The Southgate House Revival (The Revival Room)\\n111
+        E 6th St.\\nN\n ewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121209T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121208T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000957Z\nUID:40a1610b74dab228e651a8a3c623b331@cincymusic.com\nDESCRIPTION:The
+        Mudpies\\nhttp://cincymusic.com/shows/2012/12/the-mudpies\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/the-mudpies\nSUMMARY:The
+        Mudpies\nLOCATION:The Southgate House Revival (The Revival Room)\\n111 E 6th
+        St.\\nN\n ewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121209T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121209T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000958Z\nUID:89757ee7aef27227724aa004e810e848@cincymusic.com\nDESCRIPTION:Doug
+        & Telisha\\nhttp://cincymusic.com/shows/2012/12/doug-teli\n sha\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/doug-telisha\nSUMMARY:Doug
+        & Telisha\nLOCATION:The Southgate House Revival (The Revival Room)\\n111 E
+        6th St.\\nN\n ewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121215T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121215T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T001007Z\nUID:dccacc148687d9a445e0248a1ef4eca9@cincymusic.com\nDESCRIPTION:Pluto
+        Revolts w/ The Monument\\, The Killtones\\, Canoes\\nhttp:\n //cincymusic.com/shows/2012/12/plutorevolts\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/plutorevolts\nSUMMARY:Pluto
+        Revolts\nLOCATION:The Southgate House Revival (The Revival Room)\\n111 E 6th
+        St.\\nN\n ewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121222T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121221T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001013Z\nUID:950c2c1b82c1e85521be08dbc696856e@cincymusic.com\nDESCRIPTION:Kevin
+        and The Octaves w/ The Worthmores\\nhttp://cincymusic.co\n m/shows/2012/12/kevinandtheoctaves\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/kevinandtheoctaves\nSUMMARY:Kevin
+        and The Octaves\nLOCATION:The Southgate House Revival (The Revival Room)\\n111
+        E 6th St.\\nN\n ewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121223T003000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121222T213000\nDTSTAMP;VALUE=DATE-TIME:20121119T001016Z\nUID:41dfcd39878ee9f3bfdd92dac96c74a9@cincymusic.com\nDESCRIPTION:The
+        Perfect Children w/ Culture Queer\\, Heavy Hinges\\nhttp://\n cincymusic.com/shows/2012/12/the-perfect-children\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/the-perfect-children\nSUMMARY:The
+        Perfect Children\nLOCATION:The Southgate House Revival (The Revival Room)\\n111
+        E 6th St.\\nN\n ewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121229T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121228T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001023Z\nUID:0bd0dab720bce3fe02fd1ed3fdcca1fe@cincymusic.com\nDESCRIPTION:Jody
+        Stapleton & The Generals w/ The Mitchells\\, The Ready St\n ance\\nhttp://cincymusic.com/shows/2012/12/jody-stapleton-the-generals2\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/jody-stapleton-the-gene\n
+        rals2\nSUMMARY:Jody Stapleton & The Generals\nLOCATION:The Southgate House
+        Revival (The Revival Room)\\n111 E 6th St.\\nN\n ewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121230T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121229T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T001026Z\nUID:b3bcba8b5cea394d4ff2637119b8804a@cincymusic.com\nDESCRIPTION:Joshua
+        Black Wilkins\\nhttp://cincymusic.com/shows/2012/12/jos\n hua-black-wilkins\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/joshua-black-wilkins\nSUMMARY:Joshua
+        Black Wilkins\nLOCATION:The Southgate House Revival (The Revival Room)\\n111
+        E 6th St.\\nN\n ewport, Newport 41071\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121124T223000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121124T193000\nDTSTAMP;VALUE=DATE-TIME:20121119T000923Z\nUID:f7750f388130a3102b86e51b2ab722a9@cincymusic.com\nDESCRIPTION:Young
+        Forever\\nhttp://cincymusic.com/shows/2012/11/young-fore\n ver\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/young-forever\nSUMMARY:Young
+        Forever\nLOCATION:The Redmoor\\n3187 Linwood Avenue\\nCincinnati, Cincinnati
+        45208\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121201T000000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121130T210000\nDTSTAMP;VALUE=DATE-TIME:20121119T000937Z\nUID:4a6ad0529a71ea2673f888a52e94a316@cincymusic.com\nDESCRIPTION:2nd
+        Wind Jazz & R&B Band\\nhttp://cincymusic.com/shows/2012/11\n /2ndwindjazz\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/2ndwindjazz\nSUMMARY:2nd
+        Wind Jazz & R&B Band\nLOCATION:The Redmoor\\n3187 Linwood Avenue\\nCincinnati,
+        Cincinnati 45208\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121125T010000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121124T220000\nDTSTAMP;VALUE=DATE-TIME:20121119T000926Z\nUID:2dd5ac229793b1fa2d62c6aa5f9d82b9@cincymusic.com\nDESCRIPTION:Mangrenade
+        w/ Addis and Ackbar\\, Orchid in the Ivy\\nhttp://ci\n ncymusic.com/shows/2012/11/mangrenade\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/mangrenade\nSUMMARY:Mangrenade\nLOCATION:Molly
+        Malone's\\n112 E. Fourth Street\\nCovington, Covington 41011\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121130T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121130T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000937Z\nUID:8e581f5b552b4b039baa152407e386e7@cincymusic.com\nDESCRIPTION:The
+        New Void w/ Damn It To Hell\\, Yankee Go Home\\nhttp://cinc\n ymusic.com/shows/2012/11/the-new-void\nURL;VALUE=URI:http://cincymusic.com/shows/2012/11/the-new-void\nSUMMARY:The
+        New Void\nLOCATION:Baba Budan's\\n239 W McMillan St\\nCincinnati, Cincinnati
+        45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121201T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121201T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000941Z\nUID:19a216611cf9ecede9a072f21ba959e9@cincymusic.com\nDESCRIPTION:Mardou
+        w/ Old City\\, The Yugos\\nhttp://cincymusic.com/shows/2\n 012/12/mardou\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/mardou\nSUMMARY:Mardou\nLOCATION:Baba
+        Budan's\\n239 W McMillan St\\nCincinnati, Cincinnati 45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121208T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121208T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000956Z\nUID:a631f355cf0a899c8ccb058f3c953818@cincymusic.com\nDESCRIPTION:C2\\nhttp://cincymusic.com/shows/2012/12/c2\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/c2\nSUMMARY:C2\nLOCATION:Baba
+        Budan's\\n239 W McMillan St\\nCincinnati, Cincinnati 45219\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121207T210000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121207T180000\nDTSTAMP;VALUE=DATE-TIME:20121119T000951Z\nUID:dd53fc4637b703ddf26515d045846a5a@cincymusic.com\nDESCRIPTION:46
+        Long\\nhttp://cincymusic.com/shows/2012/12/46-long\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/46-long\nSUMMARY:46
+        Long\nLOCATION:Arnold's\\n210 East Eighth Street\\nCincinnati, Cincinnati
+        45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121207T233000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121207T203000\nDTSTAMP;VALUE=DATE-TIME:20121119T000951Z\nUID:33d3d4f964708945f84348cd434077fc@cincymusic.com\nDESCRIPTION:City
+        Nights Television Show w/ City Nights Television Show\\, \n The Millennium
+        Robots\\,\\nhttp://cincymusic.com/shows/2012/12/city-nights\n -television-show\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/city-nights-television-\n
+        show\nSUMMARY:City Nights Television Show\nLOCATION:City Nights\\n3414 Decoursey
+        Avenue\\nCovington, Covington 41015\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121208T230000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121208T200000\nDTSTAMP;VALUE=DATE-TIME:20121119T000954Z\nUID:ac7f7964a2b76b393cece631a4eb915b@cincymusic.com\nDESCRIPTION:Kevin
+        Hart\\nhttp://cincymusic.com/shows/2012/12/kevin-hart\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/kevin-hart\nSUMMARY:Kevin
+        Hart\nLOCATION:U.S. Bank Arena\\n100 Broadway\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20121230T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20121230T190000\nDTSTAMP;VALUE=DATE-TIME:20121119T001028Z\nUID:ab41f19d35d3d076d440df9535e034fb@cincymusic.com\nDESCRIPTION:Zac
+        Brown Band w/ Levi Lowrey\\, Blackberry Smoke\\nhttp://cinc\n ymusic.com/shows/2012/12/zac-brown-band\nURL;VALUE=URI:http://cincymusic.com/shows/2012/12/zac-brown-band\nSUMMARY:Zac
+        Brown Band\nLOCATION:U.S. Bank Arena\\n100 Broadway\\nCincinnati, Cincinnati
+        45202\nSEQUENCE:1\nEND:VEVENT\nBEGIN:VEVENT\nDTEND;TZID=US/Eastern;VALUE=DATE-TIME:20130222T220000\nDTSTART;TZID=US/Eastern;VALUE=DATE-TIME:20130222T190000\nDTSTAMP;VALUE=DATE-TIME:20121119T001044Z\nUID:2321785816be3087d38f3422d2d63254@cincymusic.com\nDESCRIPTION:Winter
+        Jam 2013 Tour Spectacular\\nhttp://cincymusic.com/shows\n /2013/02/winter-jam-2013-tour-spectacular\nURL;VALUE=URI:http://cincymusic.com/shows/2013/02/winter-jam-2013-tour-sp\n
+        ectacular\nSUMMARY:Winter Jam 2013 Tour Spectacular\nLOCATION:U.S. Bank Arena\\n100
+        Broadway\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\nEND:VCALENDAR\n"
+    http_version: !!null 
+  recorded_at: Mon, 19 Nov 2012 05:13:03 GMT
+recorded_with: VCR 2.2.5

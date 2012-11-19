@@ -3,6 +3,13 @@ class LocationsController < ApplicationController
   def index
   end
 
+  def show
+    headers['Content-Type'] = "text/calendar"
+    location = Location.find(params[:id].to_i)
+    render :text => Net::HTTP.get(URI(location.feed.url)), :content_type => 'text/calendar'
+
+  end
+
   private
 
   def locations
