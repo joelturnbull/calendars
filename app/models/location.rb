@@ -25,10 +25,8 @@ module AttachmentSettings
         options[:s3_credentials] = { secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'] }
         options[:s3_credentials] = { bucket: 'music-feeds' }
         options[:s3_headers] = { 'Content-Type'=> "text/calendar", 'Content-Disposition' => 'attachment' }
-        options[:s3_permissions]  ||= 'private'
-        options[:s3_protocol]     ||= 'https'
       else
-        options[:storage]         ||= :filesystem
+        options[:storage] ||= :filesystem
         options[:path]  ||= ":rails_root/public/system/attachments/#{Rails.env}/#{attachment_path}"
         options[:url]   ||= "/system/attachments/#{Rails.env}/#{attachment_path}"
       end
