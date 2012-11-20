@@ -25,5 +25,13 @@ class LocationsController < ApplicationController
     @feeds ||= Location.order("name").where("name != '#{MASTER_FEED_NAME}'")
   end
 
-  helper_method :locations
+  def google_subscribe_link(location)
+    "http://www.google.com/calendar/render?cid=#{CGI.escape(locations_url(location))}"
+  end
+
+  def ical_subscribe_link(location)
+   "webcal://#{CGI.escape(locations_url(location).gsub("http://",""))}"
+  end
+
+  helper_method :locations, :google_subscribe_link, :ical_subscribe_link
 end
