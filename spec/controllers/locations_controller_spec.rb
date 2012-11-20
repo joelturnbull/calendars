@@ -28,7 +28,7 @@ describe LocationsController do
       end
     end
 
-    context "returns the index html" do
+    context "returns the master ics" do
       When { get :index, format: :ics}
       Then { response.code.should == "200" }
       Then { response.content_type.should == "text/calendar" }
