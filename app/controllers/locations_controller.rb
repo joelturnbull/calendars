@@ -27,11 +27,11 @@ class LocationsController < ApplicationController
   end
 
   def google_subscribe_link(location)
-    "http://www.google.com/calendar/render?cid=#{CGI.escape(locations_url(location))}"
+    "http://www.google.com/calendar/render?cid=#{CGI.escape(location_url(location))}"
   end
 
   def ical_subscribe_link(location)
-   "webcal://#{CGI.escape(locations_url(location).gsub("http://",""))}"
+   "webcal://#{CGI.escape(location_url(location).gsub("http://",""))}"
   end
 
   helper_method :locations, :google_subscribe_link, :ical_subscribe_link
