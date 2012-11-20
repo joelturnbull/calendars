@@ -12,11 +12,9 @@ class LocationsController < ApplicationController
 
   def show
     respond_to do |format| 
-      format.ics do
         headers['Content-Disposition'] = "attachment"
         location = Location.find(params[:id].to_i)
         render :text => Net::HTTP.get(URI(location.feed.url)), :content_type => 'text/calendar'
-      end
     end
   end
 
