@@ -1,6 +1,6 @@
 Calendars::Application.routes.draw do
 
-  resources :locations
+  resources :location
   root :to => 'locations#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
