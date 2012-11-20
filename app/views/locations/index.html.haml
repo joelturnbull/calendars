@@ -18,15 +18,15 @@
 
 
     %ul
-      -if master_location
+      -if master_feed = Location.feed
         %li 
           .row
             .four.columns
               = Location.feed_name
             .four.columns
-              = link_to "Google", master_location.google_url
+              = link_to "Google", master_feed.google_url
             .four.columns
-              = link_to "iCal", master_location.ical_url
+              = link_to "iCal", master_feed.ical_url
         %hr
           
       -locations.each do |location|

@@ -1,4 +1,3 @@
-# from http://stackoverflow.com/questions/2562249/how-can-i-set-paperclips-storage-mechanism-based-on-the-current-rails-environmen
 module AttachmentSettings
 
   class << self
@@ -52,7 +51,7 @@ class Location < ActiveRecord::Base
     end
   end
 
-  def self.master_feed
+  def self.feed
     find_by_name(MASTER_FEED_NAME)
   end
 

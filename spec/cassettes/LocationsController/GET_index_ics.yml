@@ -17,11 +17,11 @@ http_interactions:
       message: OK
     headers:
       X-Amz-Id-2:
-      - bM9ot8cTpTksdvQjW1z42+bnPx+RSK0qcYkvktAkVFdk7YIccfio2zep9tw2VyYY
+      - Gfy0G5/YZMNqHDFPDLt/egsal4L1LnzVITITCDRjuygDQxUKfZY4MzNyZk9UhdES
       X-Amz-Request-Id:
-      - AA95C2D31E857842
+      - 02E5C51D0E8677FD
       Date:
-      - Tue, 20 Nov 2012 02:10:56 GMT
+      - Tue, 20 Nov 2012 02:11:52 GMT
       Content-Disposition:
       - attachment
       Last-Modified:
@@ -563,5 +563,5 @@ http_interactions:
         ectacular\nSUMMARY:Winter Jam 2013 Tour Spectacular\nLOCATION:U.S. Bank Arena\\n100
         Broadway\\nCincinnati, Cincinnati 45202\nSEQUENCE:1\nEND:VEVENT\nEND:VCALENDAR\n"
     http_version: !!null 
-  recorded_at: Tue, 20 Nov 2012 02:10:59 GMT
+  recorded_at: Tue, 20 Nov 2012 02:11:55 GMT
 recorded_with: VCR 2.2.5
