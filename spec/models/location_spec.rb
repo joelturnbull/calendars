@@ -15,7 +15,7 @@ describe Location do
       Then { location.events.should include(event2) }
     end
 
-    context "dependent destory" do
+    context "dependent destroy" do
       When { location.destroy }
       Then { Event.count.should == 0 }
     end

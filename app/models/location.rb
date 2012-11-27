@@ -79,6 +79,7 @@ class Location < ActiveRecord::Base
 
   def publish
     cal = RiCal::Component::Calendar.new
+    cal.add_x_property('X-WR-CALNAME',name)
     add_events(cal)
     cal.to_s
   end
