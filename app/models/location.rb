@@ -82,7 +82,7 @@ class Location < ActiveRecord::Base
     cal.add_x_property('X-WR-CALNAME',name)
     cal.add_x_property('X-WR-CALDESC',name)
     add_events(cal)
-    cal.to_s
+    cal.to_s.gsub("::",":")
   end
 
   def self.publish
