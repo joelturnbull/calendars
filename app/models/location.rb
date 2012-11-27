@@ -90,7 +90,7 @@ class Location < ActiveRecord::Base
     Location.all.each do |location|
       location.add_events(cal) 
     end
-    cal.to_s
+    cal.to_s.gsub("::",":")
   end
 
   def add_events(cal)
