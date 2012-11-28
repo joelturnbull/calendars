@@ -2,6 +2,7 @@ Calendars::Application.routes.draw do
 
   resources :locations
   root :to => 'locations#index'
+  match "auth/:provider/callback" => "sessions#create"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

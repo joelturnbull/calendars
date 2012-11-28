@@ -10,6 +10,9 @@ gem 'paperclip'
 gem 'aws-sdk', '~> 1.3.4'
 
 gem 'haml' 
+gem 'google-api-client'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
 
 group :assets do
   gem 'zurb-foundation', '~> 2.2'
