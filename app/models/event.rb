@@ -15,8 +15,10 @@ class Event < ActiveRecord::Base
   end
 
   def ics_is_unique
-    if Event.find_by_ics(ics)
-      errors.add(:ics,"not unique")
+    if ( e = Event.find_by_ics(ics))
+      unless e == self
+        errors.add(:ics,"not unique")
+      end
     end
   end
 
