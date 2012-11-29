@@ -15,7 +15,6 @@ class GoogleApi
   # Request authorization
   redirect_uri = client.authorization.authorization_uri
 
-  binding.pry
   client.authorization.code = '....'
   client.authorization.fetch_access_token!
 
