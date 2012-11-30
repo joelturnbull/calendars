@@ -2,3 +2,17 @@ body {
   background-color: #ed1c24;
   color: white;
 }
+
+#feeds { 
+  margin-top: 50px;
+}
+
+#instructions { 
+  width: 90%;
+  margin: 5px 0px 0px 15px;
+  text-align: center
+}
+
+#footer {
+  margin-bottom: 20px;
+}

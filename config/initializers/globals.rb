@@ -1,4 +1,4 @@
-MASTER_FEED_NAME = "All"
+MASTER_FEED_NAME = "Cincinnati Live Music Calendar"
 
 case Rails.env
   when "test"

@@ -21,8 +21,17 @@ describe Location do
     end
 
     context "publishes collected events" do
-      When(:rical) { RiCal.parse_string(location.publish) }
-      Then { rical[0].events.count.should == 2 }
+      When(:text) { location.publish }
+
+      context "published calendar has events" do
+        When(:rical) { RiCal.parse_string(text) }
+        Then { rical[0].events.count.should == 2 }
+      end
+      
+      context "published calendar is named" do
+        Then { text.should match "X-WR-CALNAME:Foo" }
+        Then { text.should match "X-WR-CALDESC:Foo" }
+      end
     end
 
     context "published events across locations" do
@@ -49,6 +58,12 @@ describe Location do
       Given { flexmock(Location).new_instances.should_receive(:save!).and_return("") }
       When { Location.write_file }
       Then { Location.find_by_name(MASTER_FEED_NAME).should_not be_nil }
+    end
+
+    context "published master calendar is named" do
+        When(:text) { Location.publish }
+        Then { text.should match "X-WR-CALNAME:#{MASTER_FEED_NAME}" }
+        Then { text.should match "X-WR-CALDESC:#{MASTER_FEED_NAME}" }
     end
   end
 end

@@ -87,6 +87,8 @@ class Location < ActiveRecord::Base
 
   def self.publish
     cal = RiCal::Component::Calendar.new
+    cal.add_x_property('X-WR-CALNAME',MASTER_FEED_NAME)
+    cal.add_x_property('X-WR-CALDESC',MASTER_FEED_NAME)
     Location.all.each do |location|
       location.add_events(cal) 
     end

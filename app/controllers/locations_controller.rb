@@ -11,13 +11,9 @@ class LocationsController < ApplicationController
   end
 
   def show
-#    respond_to do |format| 
-#      format.ics do
-        headers['Content-Disposition'] = "attachment"
-        location = Location.find(params[:id].to_i)
-        render :text => Net::HTTP.get(URI(location.feed.url)), :content_type => 'text/calendar'
-#      end
-#    end
+    headers['Content-Disposition'] = "attachment"
+    location = Location.find(params[:id].to_i)
+    render :text => Net::HTTP.get(URI(location.feed.url)), :content_type => 'text/calendar'
   end
 
   private
@@ -34,5 +30,8 @@ class LocationsController < ApplicationController
    "webcal://#{CGI.escape(location_url(location).gsub("http://",""))}"
   end
 
-  helper_method :locations, :google_subscribe_link, :ical_subscribe_link
+  def ics_link(location)
+    location_url(location)
+  end
+  helper_method :locations, :google_subscribe_link, :ical_subscribe_link, :ics_link
 end
