@@ -39,7 +39,6 @@ describe LocationsController do
   describe "GET location" do
     use_vcr_cassette
 
-
     Given(:location) { Location.create(name:"Foo") }
     Given(:feed) do
       flexmock("feed").tap do |obj| 

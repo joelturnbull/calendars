@@ -1,11 +1,12 @@
 .row
-  .six.columns.centered
+  .eight.columns.centered
 
-    %img{:src=>"assets/clmc.png",:style=>"margin: 20px 0 15px -5px",:alt=>"Cincinnati Live Music Calendars"}
+    %div{:style=>"width:100%;text-align:center"}
+      %img{:src=>"assets/clmc.png",:style=>"margin: 20px 0 15px 0px",:alt=>"Cincinnati Live Music Calendars"}
 
     #instructions
       %p Subscribe to live music event feeds from venues around town! 
-      %p Click a link below to start automatically updating your calendar of choice with local music events. Feeds are updated daily.
+      %p Click a link below to start automatically updating your calendar of choice with local music events. Feeds are updated weekly.
 
     #feeds
     - if last_update = Location.last_update 
@@ -18,37 +19,34 @@
           <a href="https://twitter.com/share" class="twitter-share-button" data-text="Subscribe to Live Music Events in Cincinnati!" data-via="joelturnbull">Tweet</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-    %hr
-    %ul
+    %ul.no-style
       -if master_location = Location.feed
-        %li 
+        %li.master
           .row
-            .five.columns
+            .four.columns
               %b
                 = "Subscribe to All Venues"
-            .two.columns
-              %b
-                = link_to "Google", google_subscribe_link(master_location)
-            .two.columns
-              %b
-                = link_to "iCal", ical_subscribe_link(master_location)
             .three.columns
               %b
-                = link_to "ics", ics_link(master_location)
-        %hr
+                = link_to "Google", google_subscribe_link(master_location), :class => "secondary radius button small expand"
+            .two.columns.hide-for-small
+              %b
+                = link_to "iCal", ical_subscribe_link(master_location), :class => "secondary radius button small expand"
+            .two.columns.end
+              %b
+                = link_to "ics", ics_link(master_location), :class => "secondary radius button small expand"
           
       -locations.each do |location|
         %li
           .row
-            .five.columns
+            .four.columns
               = location.feed_name
-            .two.columns
-              = link_to "Google", google_subscribe_link(location)
-            .two.columns
-              = link_to "iCal", ical_subscribe_link(location)
             .three.columns
-              = link_to "ics", ics_link(location)
-    %hr
+              = link_to "Google", google_subscribe_link(location), :class => "secondary radius button small expand"
+            .two.columns.hide-for-small
+              = link_to "iCal", ical_subscribe_link(location), :class => "secondary radius button small expand"
+            .two.columns.end
+              = link_to "ics", ics_link(location), :class => "secondary radius button small expand"
     #footer
       .row
         .ten.columns
