@@ -38,6 +38,7 @@ end
 class Location < ActiveRecord::Base
   include AttachmentSettings
   has_many :events, dependent: :destroy 
+  has_many :clicks, dependent: :destroy
   has_attachment :feed
   attr_accessible :name, :feed
 

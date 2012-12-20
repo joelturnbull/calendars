@@ -52,13 +52,22 @@ describe LocationsController do
       flexmock(Location).tap do |obj| 
         obj.should_receive(:find).with(location.id).and_return(location) 
       end
+      flexmock(controller.request).tap do |obj| 
+        obj.should_receive(:remote_ip).and_return('123.123.123.123') 
+      end
     end
     
+    When { get :show, :id => location.id, format: :ics }
+
     context "returns the location ics" do
-      When { get :show, :id => location.id, format: :ics }
       Then { response.code.should == "200" }
       Then { response.content_type.should == "text/calendar" }
       Then { response.body.should =~ /Bar/ }
+    end
+
+    context "stores the click" do
+      Then { location.clicks.count.should == 1 }
+      Then { location.clicks.first.ip.should == '123.123.123.123' }
     end
   end
 end
