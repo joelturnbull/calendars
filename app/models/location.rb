@@ -35,8 +35,8 @@ class Location < ActiveRecord::Base
     master_feed.clicks
   end
 
-  def record_click_from_ip(ip)
-    Click.create!(location: self, ip: ip)
+  def record_click_from_ip(ip,type)
+    Click.create!(location: self, ip: ip, click_type: type )
   end
 
   def write_file(publisher = self)

@@ -33,17 +33,18 @@ describe LocationsController do
       end
     end
 
+    When { get :index, format: :ics, click_type: 'ics'}
+
     context "returns the master ics" do
-      When { get :index, format: :ics}
       Then { response.code.should == "200" }
       Then { response.content_type.should == "text/calendar" }
       Then { response.body.should =~ /Bar/ }
     end
 
     context "stores the click" do
-      When { get :index, format: :ics}
       Then { Location.clicks.count.should == 1 }
       Then { Location.clicks.first.ip.should == '123.123.123.123' }
+      Then { Location.clicks.first.click_type.should == 'ics' }
     end
   end
 
@@ -68,7 +69,7 @@ describe LocationsController do
       end
     end
     
-    When { get :show, :id => location.id, format: :ics }
+    When { get :show, :id => location.id, format: :ics, click_type: 'ics'}
 
     context "returns the location ics" do
       Then { response.code.should == "200" }
@@ -79,6 +80,7 @@ describe LocationsController do
     context "stores the click" do
       Then { location.clicks.count.should == 1 }
       Then { location.clicks.first.ip.should == '123.123.123.123' }
+      Then { location.clicks.first.click_type.should == 'ics' }
     end
   end
 end
