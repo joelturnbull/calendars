@@ -5,7 +5,8 @@ class LocationsController < ApplicationController
       format.html
       format.ics do
         headers['Content-Disposition'] = "attachment"
-        render :text => Net::HTTP.get(URI(Location.feed.url)), :content_type => 'text/calendar'
+        render :text => Net::HTTP.get(URI(Location.master_feed.url)), :content_type => 'text/calendar'
+        Location.master_feed.record_click_from_ip(request.remote_ip)
       end
     end
   end
@@ -14,7 +15,7 @@ class LocationsController < ApplicationController
     headers['Content-Disposition'] = "attachment"
     location = Location.find(params[:id].to_i)
     render :text => Net::HTTP.get(URI(location.feed.url)), :content_type => 'text/calendar'
-    Click.create!(location: location, ip: request.remote_ip )
+    location.record_click_from_ip(request.remote_ip)
   end
 
   private

@@ -17,14 +17,19 @@ describe LocationsController do
   describe "GET index ics" do
     use_vcr_cassette
 
-    Given(:feed) do 
-      flexmock("feed").tap do |obj| 
+    Given!(:feed) do 
+      Location.create!(name:MASTER_FEED_NAME)
+      flexmock(Location.master_feed).tap do |obj| 
         obj.should_receive(:url).and_return(feed_url)
       end
     end
     Given do 
       flexmock(Location).tap do |obj| 
-        obj.should_receive(:feed).and_return(feed)
+        obj.should_receive(:master_feed).and_return(feed)
+      end
+
+      flexmock(controller.request).tap do |obj| 
+        obj.should_receive(:remote_ip).and_return('123.123.123.123') 
       end
     end
 
@@ -33,6 +38,12 @@ describe LocationsController do
       Then { response.code.should == "200" }
       Then { response.content_type.should == "text/calendar" }
       Then { response.body.should =~ /Bar/ }
+    end
+
+    context "stores the click" do
+      When { get :index, format: :ics}
+      Then { Location.clicks.count.should == 1 }
+      Then { Location.clicks.first.ip.should == '123.123.123.123' }
     end
   end
 
