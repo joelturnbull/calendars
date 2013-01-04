@@ -11,12 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130103151254) do
+ActiveRecord::Schema.define(:version => 20130104031333) do
 
   create_table "clicks", :force => true do |t|
-    t.integer "location_id"
-    t.string  "ip"
-    t.string  "click_type"
+    t.integer  "location_id"
+    t.string   "ip"
+    t.string   "click_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "events", :force => true do |t|
