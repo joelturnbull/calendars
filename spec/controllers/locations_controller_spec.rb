@@ -33,7 +33,7 @@ describe LocationsController do
       end
     end
 
-    When { get :index, format: :ics, click_type: 'ics'}
+    When { get :index, format: :ics, subscription_type: 'ics'}
 
     context "returns the master ics" do
       Then { response.code.should == "200" }
@@ -41,10 +41,10 @@ describe LocationsController do
       Then { response.body.should =~ /Bar/ }
     end
 
-    context "stores the click" do
-      Then { Location.clicks.count.should == 1 }
-      Then { Location.clicks.first.ip.should == '123.123.123.123' }
-      Then { Location.clicks.first.click_type.should == 'ics' }
+    context "stores the subscription" do
+      Then { Location.subscriptions.count.should == 1 }
+      Then { Location.subscriptions.first.ip.should == '123.123.123.123' }
+      Then { Location.subscriptions.first.subscription_type.should == 'ics' }
     end
   end
 
@@ -69,7 +69,7 @@ describe LocationsController do
       end
     end
     
-    When { get :show, :id => location.id, format: :ics, click_type: 'ics'}
+    When { get :show, :id => location.id, format: :ics, subscription_type: 'ics'}
 
     context "returns the location ics" do
       Then { response.code.should == "200" }
@@ -77,10 +77,10 @@ describe LocationsController do
       Then { response.body.should =~ /Bar/ }
     end
 
-    context "stores the click" do
-      Then { location.clicks.count.should == 1 }
-      Then { location.clicks.first.ip.should == '123.123.123.123' }
-      Then { location.clicks.first.click_type.should == 'ics' }
+    context "stores the subscription" do
+      Then { location.subscriptions.count.should == 1 }
+      Then { location.subscriptions.first.ip.should == '123.123.123.123' }
+      Then { location.subscriptions.first.subscription_type.should == 'ics' }
     end
   end
 end

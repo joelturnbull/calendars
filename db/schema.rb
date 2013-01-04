@@ -11,15 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130104031333) do
-
-  create_table "clicks", :force => true do |t|
-    t.integer  "location_id"
-    t.string   "ip"
-    t.string   "click_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(:version => 20130104034703) do
 
   create_table "events", :force => true do |t|
     t.integer  "source_id"
@@ -45,6 +37,14 @@ ActiveRecord::Schema.define(:version => 20130104031333) do
     t.string   "path"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "subscriptions", :force => true do |t|
+    t.integer  "location_id"
+    t.string   "ip"
+    t.string   "subscription_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

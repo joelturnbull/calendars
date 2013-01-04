@@ -1,7 +1,7 @@
 class Location < ActiveRecord::Base
   include AttachmentSettings
   has_many :events, dependent: :destroy 
-  has_many :clicks, dependent: :destroy
+  has_many :subscriptions, dependent: :destroy
   has_attachment :feed
   attr_accessible :name, :feed
 
@@ -31,12 +31,12 @@ class Location < ActiveRecord::Base
     master_location.write_file(Location)
   end
 
-  def self.clicks
-    master_feed.clicks
+  def self.subscriptions
+    master_feed.subscriptions
   end
 
-  def record_click_from_ip(ip,type)
-    Click.create!(location: self, ip: ip, click_type: type )
+  def record_subscription_from_ip(ip,type)
+    Subscription.create!(location: self, ip: ip, subscription_type: type )
   end
 
   def write_file(publisher = self)
