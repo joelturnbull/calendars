@@ -6,7 +6,7 @@
 
     #instructions
       %p Subscribe to live music event feeds from venues around town! 
-      %p Subscription a link below to start automatically updating your calendar of choice with local music events. Feeds are updated weekly.
+      %p Click a link below to start automatically updating your calendar of choice with local music events. Feeds are updated weekly.
 
     #feeds
     - if last_update = Location.last_update 
@@ -51,7 +51,8 @@
       .row
         .ten.columns
         .two.columns
-          = link_to "contact", "mailto:joelbywan@gmail.com"
+          %p
+            = link_to "contact", "mailto:joelbywan@gmail.com", :id => "contact-link"
 
 :javascript
   var _gaq = _gaq || [];
