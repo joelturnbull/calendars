@@ -11,6 +11,7 @@ require 'webmock/rspec'
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
 RSpec.configure do |config|
+  #FactoryGirl.find_definitions
 
   config.extend VCR::RSpec::Macros
 

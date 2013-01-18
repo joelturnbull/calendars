@@ -35,4 +35,5 @@ group :development, :test do
   gem 'rspec-given'
   gem 'vcr'
   gem 'flexmock'
+  gem 'factory_girl'
 end
